@@ -1,0 +1,502 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  }
+  
+  body {
+  font-family: 'Roboto', sans-serif !important;
+  }
+  
+  nav.navbar.navbar-expand-sm {
+  padding: 0;
+  }
+  
+  /* header */
+  .header {
+  background: url(/assets/imgs/bg_header.png);
+  background-size: cover;
+  height: 566px;
+  position: relative;
+  font-family: 'Roboto', sans-serif !important;
+  }
+  
+  .container-fluid.intro-thecanteen {
+  background: url(assets/imgs/bg_intro_restaurant.png);
+  height: 850px;
+  }
+  
+  .menu {
+  width: 100%;
+  background-color: #343a4078;
+  }
+  
+  ul.navbar-nav .nav-item {
+  
+  margin: 0 10px;
+  position: relative;
+  
+  }
+  
+  a.navbar-brand {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  margin-left: 62px;
+  }
+  
+  ul.navbar-nav.menu-left {
+  font-size: 28px;
+  font-weight: 400;
+  }
+  
+  ul.navbar-nav.menu-left .nav-item .nav-link,
+  ul.navbar-nav.menu-right .nav-item .nav-link {
+  color: #fff !important;
+  }
+  
+  ul.navbar-nav.menu-right {
+  font-size: 28px;
+  font-weight: 400;
+  }
+  
+  .navbar-brand img {
+  height: 100% !important;
+  width: auto;
+  display: block;
+  }
+  
+  .collapse {
+  justify-content: space-around;
+  }
+  
+  div#sologan {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 72px;
+  }
+  
+  div#book_now {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  }
+  
+  #sologan h1 {
+  color: white !important;
+  font-size: 64px;
+  font-weight: 400;
+  }
+  
+  button.btn.btn-danger {
+  font-size: 24px;
+  }
+  
+  li.nav-item::before {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+  left: auto;
+  height: 2px;
+  background-color: #ffa400;
+  width: 0;
+  transition: width 0.25s linear;
+  }
+  
+  li.nav-item:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+  }
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+@media (max-width: 575px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
+
+/* To change the amount of columns on larger devices, uncomment the code below */
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid-sizer,
+  .grid-item {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-sizer,
+  .grid-item {
+    width: 20%;
+  }
+} */
+
+.grid-item {
+  float: left;
+  padding: 15px;
+  padding-bottom: 20px !important;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+.blog-grid{
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+/* footer */
+.footer {
+    background: url(/assets/imgs/bg_footer.png);
+    height: 445px;
+    margin-bottom: 0 !important;
+}
+
+p#sologan-footer {
+    font-size: 24px;
+    color: #A99292;
+    padding-top: 21px;
+}
+
+p#address {
+    font-size: 24px;
+    color: #A99292;
+}
+
+i.fab.fa-facebook {
+    font-size: 30px;
+    color: #A99292;
+}
+
+i.fab.fa-twitter-square {
+    font-size: 30px;
+    color: #A99292;
+    /* border-radius: 50%; */
+}
+
+i.fab.fa-google-plus {
+    font-size: 30px;
+    color: #A99292;
+}
+
+.main-footer {
+    padding-top: 65px;
+}
+/* btn back to top */
+#btn-backtop {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#btn-backtop::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: '\f077';
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#btn-backtop:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#btn-backtop:active {
+    background-color: #555;
+}
+
+#btn-backtop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* reponsive */
+
+@media (min-width:320px) and (max-width:479px){
+  .container-fluid.header {
+    height: 40vh;
+    background-size: cover;
+}
+span.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.navbar-light .navbar-toggler {
+    border: 0.5px solid #fff;
+}
+div#sologan {
+    position: absolute;
+}
+
+#sologan h1 {
+    font-size: 18px;
+}
+
+button.btn.btn-danger {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+a.navbar-brand{
+    margin: 0;
+}
+.navbar-brand img {
+    height: 44px !important;
+}
+.pos-right,.pos-left {
+    position: relative;
+}
+.menu {
+    background: #343a40;
+    z-index: 1;
+}
+ul.navbar-nav.menu-left {
+    font-size: 14px;
+}
+
+ul.navbar-nav.menu-right {
+    font-size: 14px;
+}
+p#sologan-footer {
+    font-size: 18px;
+}
+
+p#address{
+    font-size: 18px;
+}
+
+i.fab.fa-facebook {
+    font-size: 24px;
+}
+
+i.fab.fa-twitter-square {
+    font-size: 24px;
+}
+
+i.fab.fa-google-plus {
+    font-size: 24px;
+}
+}
+@media (min-width: 480px) and (max-width:575px){
+  .container-fluid.header {
+      height: 400px;
+      background-size: cover;
+  }
+  span.navbar-toggler-icon {
+      background-color: #ffffff;
+  }
+
+  .navbar-light .navbar-toggler {
+      border: 0.5px solid #fff;
+  }
+  div#sologan {
+      position: absolute;
+  }
+
+  #sologan h1 {
+      font-size: 1.5rem;
+  }
+
+  button.btn.btn-danger {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  a.navbar-brand{
+    margin: 0;
+}
+  .navbar-brand img {
+      height: 44px !important;
+  }
+  .pos-right,.pos-left {
+      position: relative;
+  }
+  .menu {
+      background: #343a40;
+      z-index: 1;
+  }
+  ul.navbar-nav.menu-left {
+      font-size: 14px;
+  }
+
+  ul.navbar-nav.menu-right {
+      font-size: 14px;
+  }
+    p#sologan-footer {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    p#address{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    i.fab.fa-facebook {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-twitter-square {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-google-plus {
+        font-size: 24px;
+    }
+}
+@media (min-width: 576px) and (max-width:767px) {
+  .container-fluid.header {
+      height: 400px;
+      background-size: cover;
+  }
+  span.navbar-toggler-icon {
+      background-color: #ffffff;
+  }
+
+  .navbar-light .navbar-toggler {
+      border: 0.5px solid #fff;
+  }
+  div#sologan {
+      position: absolute;
+  }
+
+  #sologan h1 {
+      font-size: 1.5rem;
+  }
+
+  div#book_now {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  button.btn.btn-danger {
+      font-size: 18px;
+  }
+  a.navbar-brand{
+    margin: 0;
+}
+  .navbar-brand img {
+      height: 44px !important;
+  }
+  .pos-right,.pos-left {
+      position: relative;
+  }
+  .menu {
+      background: #343a40;
+      z-index: 1;
+  }
+  ul.navbar-nav.menu-left {
+      font-size: 1rem;
+  }
+
+  ul.navbar-nav.menu-right {
+      font-size: 1rem;
+  }
+  button.btn.btn-info {
+      font-size: 1rem;
+  }
+  p#sologan-footer {
+    font-size: 18px;
+}
+
+p#address {
+    font-size: 18px;
+}
+
+i.fab.fa-facebook {
+    font-size: 24px;
+}
+
+i.fab.fa-twitter-square {
+    font-size: 24px;
+}
+
+i.fab.fa-google-plus {
+    font-size: 24px;
+}
+}
+@media (min-width: 768px) and (max-width:991px){
+  .menu-left .nav-item {
+    font-size: 16px;
+}
+
+.menu-right .nav-item {
+    font-size: 16px;
+}
+
+a.navbar-brand {
+    margin-left: 30px;
+}
+
+#sologan h1 {
+    font-size: 2rem;
+}
+
+.container-fluid.header {
+    height: 50vh;
+    background-size: cover;
+}
+button.btn.btn-danger {
+    font-size: 18px;
+    padding: 5px 10px;
+}
+}
+@media (min-width: 992px) and (max-width:1199px)
+{
+    ul.navbar-nav.menu-left {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    ul.navbar-nav.menu-right {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #sologan h1 {
+        font-size: 2.5rem;
+    }
+}

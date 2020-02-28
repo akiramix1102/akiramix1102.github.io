@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(/isurlife/assets/imgs/background-products.png);
+        }
+
+        .test2 {
+            margin: 100px;
+            width: 300px;
+            transition: all ease 1s;
+        }
+
+        .test2:hover .content,.test2:hover .img {
+            transform: translateY(-10px);
+        }
+        .test2:hover .read{
+            opacity: 1;
+            overflow: hidden;
+            transform: translateY(2px);
+        }
+        .content,.img {
+            transition: all ease 0.4s;
+        }
+        .read{
+            opacity: 0;
+            transition: all ease 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test2">
+        <div class="img">
+            <img src="/isurlife/assets/imgs/img_product__life.png" alt="">
+        </div>
+        <div class="content">
+            <p>Life isurance</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consequuntur perspiciatis. Quidem vitae
+                illum, debitis et possimus iusto earum perspiciatis voluptatibus, sit soluta facilis beatae numquam
+                tenetur. Assumenda, eos quod?</p>
+        </div>
+        <div class="read">
+            <a href="">Read More</a>
+        </div>
+    </div>
+</body>
+
+</html>

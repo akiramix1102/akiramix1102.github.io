@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="library/bootstrap-4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="library/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="library/slick-1.8.1/slick/slick-theme.css">
+    <title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container-fluid header">
+        <div class="row">
+            <nav class="navbar navbar-expand-md navbar-light menu">
+                <a class="navbar-brand" href="#"><img src="/assets/imgs/logo.png" alt=""></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav menu-left">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" >Trang Chủ <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu-page.html" >Thực Đơn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="khuyen-mai.html">Khuyến Mãi</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav menu-right">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Liên Hệ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="user.html"><i class="fas fa-user-circle"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="sologan">
+                <h1>All for customer - Customer for all</h1>
+            </div>
+            <div id="book_now">
+                <a href="menu-page.html"><button type="button" class="btn btn-danger">Mua Ngay</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+    <div class="container-fluid">
+        <div class="row main-detail">
+            <div class="col-sm-10 col-xl-3 img-product">
+                <img src="/assets/imgs/product-detail.png" alt="ảnh sản phẩm" class="img-fluid">
+            </div>
+            <div class="col-sm-10 col-xl-5 infor-product">
+                <h2 class="name-product">Vegetarian</h2>
+                <div class="rate">
+                    <p>4.5/5 <span>(311 người đánh giá)</span></p>
+                </div>
+                <div class="price-product">
+                    <h3>350.000đ</h3>
+                </div>
+                <div class="ingredient-product">
+                    <p>Thành phần: Tôm, hành tây, ớt chuông đỏ, thơm, ô liu, ngò tây, phô mai Mozzarella, phô mai hai
+                        màu, xốt Sweet chili.</p>
+                    <p>Viền Phô Mai 3 Vị: Vị Tỏi, Vị Ngò Tây, Vị Trứng cá.
+                    </p>
+                    <p>Xốt chấm: xốt chanh</p>
+                </div>
+                <div class="count-and-btn">
+                    <div class="select-count">
+                        <input type="number" value="1" /><span class="input-button add">+</span><span
+                            class="input-button remove">-</span>
+                    </div>
+                    <button type="button" class="btn-buy"><a href="Cart.html">Mua</a</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row main-detail">
+            <div class="col-sm-10 col-lg-8">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="infor-tab" data-toggle="pill" href="#infor" role="tab"
+                            aria-controls="pills-infor" aria-selected="true">Thông tin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="comment-tab" data-toggle="pill" href="#comment" role="tab"
+                            aria-controls="pills-comment" aria-selected="false">Nhận xét</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="infor" role="tabpanel" aria-labelledby="infor-tab">
+                        <div class="content">
+                            <p>Tạo nên sự khác biệt có tính chất quyết định đến đặc trưng của pizza đó chính là cà chua.
+                                Đây là loại quả có xuất xứ từ Peru và Ecuador. Nó theo chân những chiến binh Tây Ban Nha
+                                từ Châu Mỹ đến châu Âu vào khoảng đầu thế kỷ 15. Nhưng phải tới cuối thể kỷ 16 người
+                                Châu Âu mới thực sự xóa bỏ sự hoài nghi rằng đây là một loại quả độc để sử dụng nó như
+                                một loại thực phẩm đặc trưng khi chế biến món pizza. </p>
+                            <img src="/assets/imgs/infor-tab.jpg" alt="thông tin 1">
+                            <p>
+                                Sau lớp xốt cà chua là topping (ham, salami, bacon, olive, nấm, cá thu, hành tây, các
+                                loại lá basilikum, orangano, majoran... sấy khô để tăng hương vị cho bánh). Cuối cùng là
+                                rắc đều lên bánh phô mai cắt nhuyễn rồi cho vào lò nướng. Bánh nướng trong lò củi hay
+                                điện cũng cần trở tay đều và xoay vòng để có được độ chín giống nhau. Chưa đến 10 phút
+                                là bánh đã chín, thơm nồng.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="comment" role="tabpanel" aria-labelledby="comment-tab">
+                        <div class="block-comment">
+                            <div class="comment">
+                                <img src="/assets/imgs/guest-review-1.svg" alt="khách hàng review">
+                                <div class="content-comment">
+                                    <div class="name-time">
+                                        <h3>Lionel Messi</h3>
+                                        <p>30 phút trước</p>
+                                    </div>
+                                    <div class="comment-text">
+                                        Nhà hàng 3 miền với nhiều món ăn Việt Nam rất ngon, ngoài ra còn có hải sản tươi
+                                        sống và nhiều món ngon không thể bỏ qua. Không gian rộng, thoáng mát, rất nhiều
+                                        câz xanh, phục vụ nhiệt tình. Giá cả tầm 100K-200K/người là ăn uống thoải mái.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <img src="/assets/imgs/guest-review-2.svg" alt="khách hàng review">
+                                <div class="content-comment">
+                                    <div class="name-time">
+                                        <h3>Cristiano Phượng</h3>
+                                        <p>50 phút trước</p>
+                                    </div>
+                                    <div class="comment-text">
+                                        Nhà hàng 3 miền với nhiều món ăn Việt Nam rất ngon, ngoài ra còn có hải sản tươi
+                                        sống và nhiều món ngon không thể bỏ qua. Không gian rộng, thoáng mát, rất nhiều
+                                        câz xanh, phục vụ nhiệt tình. Giá cả tầm 100K-200K/người là ăn uống thoải mái.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <img src="/assets/imgs/guest-review-3.svg" alt="khách hàng review">
+                                <div class="content-comment">
+                                    <div class="name-time">
+                                        <h3>Quang Hải</h3>
+                                        <p>2 giờ trước</p>
+                                    </div>
+                                    <div class="comment-text">
+                                        Nhà hàng 3 miền với nhiều món ăn Việt Nam rất ngon, ngoài ra còn có hải sản tươi
+                                        sống và nhiều món ngon không thể bỏ qua. Không gian rộng, thoáng mát, rất nhiều
+                                        câz xanh, phục vụ nhiệt tình. Giá cả tầm 100K-200K/người là ăn uống thoải mái.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <img src="/assets/imgs/guest-review-4.svg" alt="khách hàng review">
+                                <div class="content-comment">
+                                    <div class="name-time">
+                                        <h3>Teacher Three</h3>
+                                        <p>3 giờ trước</p>
+                                    </div>
+                                    <div class="comment-text">
+                                        Nhà hàng 3 miền với nhiều món ăn Việt Nam rất ngon, ngoài ra còn có hải sản tươi
+                                        sống và nhiều món ngon không thể bỏ qua. Không gian rộng, thoáng mát, rất nhiều
+                                        câz xanh, phục vụ nhiệt tình. Giá cả tầm 100K-200K/người là ăn uống thoải mái.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="my-textarea" class="form-control" name="" rows="4"
+                                    placeholder="Nhận xét của bạn..."></textarea>
+                            </div>
+                            <div class="btn-submit text-center">
+                                <button id="submit" type="button" onclick="submit()">Nhận xét</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-md-12 text-center main-footer">
+                <img src="/assets/imgs/logo.png" alt="">
+                <p id="sologan-footer">All for customer - Customer for all</p>
+                <p id="address">102 Ngõ 4C Đặng Văn Ngữ, Quận Đống Đa, Hà Nội</p>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus"></i>
+            </div>
+        </div>
+    </div>
+    <!-- Javascript link-->
+    <script src="library/jquery/jquery.js"></script>
+    <script src="detail.js"></script>
+    <script src="library/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <script src="library/hover-effect-master/dist/hover-effect.umd.js"></script>
+    <script src="library/bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>

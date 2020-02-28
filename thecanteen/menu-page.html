@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon-32x32.png">
+    <link rel="stylesheet" href="assets/css/menu-page.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="library/bootstrap-4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="library/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="library/slick-1.8.1/slick/slick-theme.css">
+    <title>Thực đơn</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container-fluid header">
+        <div class="row">
+            <nav class="navbar navbar-expand-md navbar-light menu">
+                <a class="navbar-brand" href="#"><img src="/assets/imgs/logo.png" alt=""></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav menu-left">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang Chủ <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="menu-page.html" style="color: #FAC122 !important;">Thực Đơn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="khuyen-mai.html">Khuyến Mãi</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav menu-right">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Liên Hệ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="user.html"><i class="fas fa-user-circle"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="sologan">
+                <h1>All for customer - Customer for all</h1>
+            </div>
+            <div id="book_now">
+                <button type="button" class="btn btn-danger">Mua Ngay</button>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+    <div class="container-fluid menu-food">
+        <div class="row" style="padding-top: 90px;">
+            <div class="col-sm-10 col-lg-8 col-xl-6 menu-featured">
+                <div class="img-menu text-center"><img src="/assets/imgs/image__menu-featured.png" alt="Menu noi bat">
+                </div>
+                <h2 class="name-menu text-center">Thực đơn nổi bật</h2>
+                <div class="menu-featured-products menu-slick">
+                    <div class="menu-slick-1">
+                        <div class="products">
+                            <a href="detail.html"><img src="/assets/imgs/menu-product1.png" alt="Vegetarian"></a>
+                            <div class="flex-right">
+                                <div class="name-price">
+                                    <div class="name-products">
+                                        <a href="detail.html">Vegetarian</a>
+                                    </div>
+                                    <div class="price-products">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-product">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="products">
+                            <a href="detail.html"><img src="/assets/imgs/menu-product2.png" alt="Vegetarian"></a>
+                            <div class="flex-right">
+                                <div class="name-price">
+                                    <div class="name-products">
+                                        <a href="detail.html">Ablone</a>
+                                    </div>
+                                    <div class="price-products">150.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-product">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products">
+                            <a href="detail.html"><img src="/assets/imgs/menu-product3.png" alt="Vegetarian"></a>
+                            <div class="flex-right">
+                                <div class="name-price">
+                                    <div class="name-products">
+                                        <a href="detail.html">Salted Vegetable </a>
+                                    </div>
+                                    <div class="price-products">120.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-product">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products">
+                            <a href="detail.html"><img src="/assets/imgs/menu-product4.png" alt="Vegetarian"></a>
+                            <div class="flex-right">
+                                <div class="name-price">
+                                    <div class="name-products">
+                                        <a href="detail.html">Sayte Bean Sprout </a>
+                                    </div>
+                                    <div class="price-products">210.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-product">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-slick-2">
+                        <div class="products">
+                            <a href="detail.html"><img src="/assets/imgs/menu-product5.png" alt="Vegetarian"></a>
+                            <div class="flex-right">
+                                <div class="name-price">
+                                    <div class="name-products">
+                                        <a href="detail.html">Vegetarian</a>
+                                    </div>
+                                    <div class="price-products">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-product">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="products">
+                            <a href="detail.html"><img src="/assets/imgs/menu-product6.png" alt="Vegetarian"></a>
+                            <div class="flex-right">
+                                <div class="name-price">
+                                    <div class="name-products">
+                                        <a href="detail.html">Ablone</a>
+                                    </div>
+                                    <div class="price-products">360.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-product">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products">
+                            <a href="detail.html"><img src="/assets/imgs/menu-product7.png" alt="Vegetarian"></a>
+                            <div class="flex-right">
+                                <div class="name-price">
+                                    <div class="name-products">
+                                        <a href="detail.html">Salted Vegetable </a>
+                                    </div>
+                                    <div class="price-products">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-product">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products">
+                            <a href="detail.html"><img src="/assets/imgs/menu-product8.png" alt="Vegetarian"></a>
+                            <div class="flex-right">
+                                <div class="name-price">
+                                    <div class="name-products">
+                                        <a href="detail.html">Sayte Bean Sprout </a>
+                                    </div>
+                                    <div class="price-products">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-product">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bf">
+            <div class="col-sm-10 col-lg-4 col-xl-3 drink">
+                <div class="img-menu text-center">
+                    <img src="/assets/imgs/bg__menu-drink.png" alt="Drink">
+                </div>
+                <h2 class="name-menu-drink text-center">Đồ Uống</h2>
+                <div class="menu-featured-drink menu-slick">
+                    <div class="menu-slick-1">
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Cocktail</a>
+                                    </div>
+                                    <div class="price-drink">50.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-2.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Tea Coffee</a>
+                                    </div>
+                                    <div class="price-drink">40.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-3.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Black Coffee</a>
+                                    </div>
+                                    <div class="price-drink">75.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-slick-1">
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-4.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Cocktail</a>
+                                    </div>
+                                    <div class="price-drink">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-5.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Cocktail</a>
+                                    </div>
+                                    <div class="price-drink">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-6.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Cocktail</a>
+                                    </div>
+                                    <div class="price-drink">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-lg-6 col-xl-5 menu-brf">
+                <div class="img-menu text-center">
+                    <img src="/assets/imgs/bg__menu-brf.png" alt="Drink">
+                </div>
+                <h2 class="name-menudrink text-center">Bữa Sáng</h2>
+                <div class="menu-featured-brf menu-slick">
+                    <div class="menu-slick-1">
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Stuffed pancake</a>
+                                    </div>
+                                    <div class="price-brf">120.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-2.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Sasimi raw Lobster</a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-3.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Toasted Crayfish</a>
+                                    </div>
+                                    <div class="price-brf">330.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-4.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Grilled Catfish </a>
+                                    </div>
+                                    <div class="price-brf">650.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="menu-slick-1">
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Steamed Crab</a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-2.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Steamed Kinh Crab
+                                        </a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-3.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Fried Squid</a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-4.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Boiled Snall </a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row lunch">
+            <div class="col-sm-10 col-lg-6 col-xl-5 menu-lunch">
+                <div class="img-menu text-center">
+                    <img src="/assets/imgs/bg__menu-brf.png" alt="Drink">
+                </div>
+                <h2 class="name-menudrink text-center">Bữa Trưa</h2>
+                <div class="menu-featured-brf menu-slick">
+                    <div class="menu-slick-1">
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Steamed "dieuhong" fish</a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-2.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Fried Rabbit</a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-3.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Australia Stead Beef</a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-4.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Beef dish</a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="menu-slick-1">
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Meretrix Rice gruel</a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-2.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Mixed Fried rice</a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-3.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Fried Noodles with beef</a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-4.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Eel Rice gruel</a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-lg-4 col-xl-3 drink" style="margin-left: 15px;">
+                <div class="img-menu text-center">
+                    <img src="/assets/imgs/bg__menu-drink.png" alt="Drink">
+                </div>
+                <h2 class="name-menu-drink text-center">Đồ Uống</h2>
+                <div class="menu-featured-drink menu-slick">
+                    <div class="menu-slick-1">
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-6.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Cocktail</a>
+                                    </div>
+                                    <div class="price-drink">70.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-5.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Milk Coffee</a>
+                                    </div>
+                                    <div class="price-drink">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-3.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Voldka</a>
+                                    </div>
+                                    <div class="price-drink">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-slick-1">
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Cocktail</a>
+                                    </div>
+                                    <div class="price-drink">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Cocktail</a>
+                                    </div>
+                                    <div class="price-drink">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Cocktail</a>
+                                    </div>
+                                    <div class="price-drink">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row dinner">
+            <div class="col-sm-10 col-lg-4 col-xl-3 drink">
+                <div class="img-menu text-center">
+                    <img src="/assets/imgs/bg__menu-drink.png" alt="Drink">
+                </div>
+                <h2 class="name-menu-drink text-center">Đồ Uống</h2>
+                <div class="menu-featured-drink menu-slick">
+                    <div class="menu-slick-1">
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-4.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Milk Tea</a>
+                                    </div>
+                                    <div class="price-drink">49.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-3.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Cocktail Vodka</a>
+                                    </div>
+                                    <div class="price-drink">30.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Beer</a>
+                                    </div>
+                                    <div class="price-drink">30.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-slick-1">
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Cocktail</a>
+                                    </div>
+                                    <div class="price-drink">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Cocktail</a>
+                                    </div>
+                                    <div class="price-drink">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-drink">
+                            <a href="detail.html"><img src="/assets/imgs/menu-drink-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-drink">
+                                <div class="name-price-drink">
+                                    <div class="name-drink">
+                                        <a href="detail.html">Cocktail</a>
+                                    </div>
+                                    <div class="price-drink">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-drink">
+                                    Vodka, whiskey, gin, rum, tequila...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-lg-6 col-xl-5 menu-brf">
+                <div class="img-menu text-center">
+                    <img src="/assets/imgs/bg__menu-brf.png" alt="Drink">
+                </div>
+                <h2 class="name-menudrink text-center">Bữa Tối</h2>
+                <div class="menu-featured-brf menu-slick">
+                    <div class="menu-slick-1">
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-2.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Pancako</a>
+                                    </div>
+                                    <div class="price-brf">110.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-4.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Chinese sausage</a>
+                                    </div>
+                                    <div class="price-brf">270.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-3.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Pumpkin Soup</a>
+                                    </div>
+                                    <div class="price-brf">190.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Foie gras</a>
+                                    </div>
+                                    <div class="price-brf">90.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="menu-slick-1">
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-1.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Summer roll </a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-2.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Fish cooked with sauce </a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-3.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Lotus delight salad </a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products-brf">
+                            <a href="detail.html"><img src="/assets/imgs/menu-bf-4.png" alt="Cocktail"></a>
+                            <div class="flex-right-brf">
+                                <div class="name-price-brf">
+                                    <div class="name-brf">
+                                        <a href="detail.html">Steamed sticky rice </a>
+                                    </div>
+                                    <div class="price-brf">300.000đ</div>
+                                </div>
+                                <hr class="line-menu">
+                                <p class="summary-brf">
+                                    Phô mai, hải sản, cà chua, dầu...
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- back to top-->
+    <button type="button" id="btn-backtop"></button>
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="row footer">
+            <div class="col-md-12 text-center main-footer">
+                <img src="/assets/imgs/logo.png" alt="">
+                <p id="sologan-footer">All for customer - Customer for all</p>
+                <p id="address">102 Ngõ 4C Đặng Văn Ngữ,  Quận Đống Đa, Hà Nội</p>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus"></i>
+            </div>
+        </div>
+    </div>
+        
+
+    <!-- Javascript link-->
+    <script src="library/jquery/jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="library/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="library/bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-slick').slick({
+                // autoplay: true,
+                infinite: true,
+                // autoplaySpeed: 3000,
+                infinite: true,
+                // slidesToShow: 1,
+                // slidesToScroll: 1,
+                dots: true,
+                arrows: false,
+                //                 fade: true,
+                //   cssEase: 'linear'
+            });
+        });
+    </script>
+</body>
+
+</html>

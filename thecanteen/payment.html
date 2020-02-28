@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon-32x32.png">
+    <!-- Link -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/payment.css">
+    <link rel="stylesheet" href="library/bootstrap-4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.6.0/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="library/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="library/slick-1.8.1/slick/slick-theme.css">
+    <title>Thanh Toán</title>
+</head>
+
+<body>
+    <!-- Code Header -->
+    <div class="container-fluid header">
+        <div class="row">
+            <nav class="navbar navbar-expand-md navbar-light menu">
+                <a class="navbar-brand" href="#"><img src="/assets/imgs/logo.png" alt=""></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav menu-left">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Trang Chủ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu-page.html" style="color: #fff !important;">Thực Đơn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="khuyen-mai.html">Khuyến Mãi</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav menu-right">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Liên Hệ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- block payment -->
+    <div class="container-fluid payment">
+        <div class="row">
+            <div class="col-sm-10 col-lg-6">
+                <div class="select-payment">
+                    <h1 class="payment-text">LỰA CHỌN HÌNH THỨC THANH TOÁN</h1>
+                    <div class="option-payment">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <div>
+                                    <input type="radio" class="form-check-input" name="cod" id="" value="cod">
+                                    Thanh toán tiền mặt khi nhận hàng
+                                </div>
+                                <div id="d-block">
+                                    <input type="radio" class="form-check-input" name="cod" id="" value="online">
+                                    Thanh toán trực tuyến
+                                </div>
+
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-user">
+                    <h1 class="payment-text">ĐIỀN THÔNG TIN NHẬN HÀNG</h1>
+                    <div class="block-info">
+                        <div class="row-main d-flex">
+                            <div class="block-info-text">
+                                <p class="text">Họ tên <span> *</span></p>
+                            </div>
+                            <div class="block-info-input">
+                                <input type="text" id="form1" class="form-control" placeholder="Nhập đầy đủ họ tên" >
+                            </div>
+                        </div>
+                        <div class="row-main d-flex">
+                            <div class="block-info-text">
+                                <p class="text">Số điện thoại <span> *</span></p>
+                            </div>
+                            <div class="block-info-input">
+                                <input type="text" class="form-control" placeholder="Nhập số điện thoại">
+                            </div>
+                        </div>
+                        <div class="row-main d-flex">
+                            <div class="block-info-text">
+                                <p class="text">Chọn Thành phố<span> *</span></p>
+                            </div>
+                            <div class="select-address">
+                                <select name="state" id="countySel" class="form-control" size="1">
+                                    <option value="" selected="selected">Chọn Thành Phố</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row-main d-flex">
+                            <div class="block-info-text">
+                                <p class="text">Chọn Quận/Huyện <span> *</span></p>
+                            </div>
+                            <div class="select-address">
+                                <select name="countrya" id="stateSel" class="form-control" size="1">
+                                    <option value="" selected="selected">Chọn Quận/Huyện</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row-main d-flex">
+                            <div class="block-info-text">
+                                <p class="text">Chọn Phường/Xã <span> *</span></p>
+                            </div>
+                            <div class="select-address">
+                                <select name="district" class="form-control" id="districtSel" size="1">
+                                    <option value="" selected="selected">Chọn Phường/Xã</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row-main d-flex">
+                            <div class="block-info-text">
+                                <p class="text">Nhập địa chỉ giao hàng <span> *</span></p>
+                            </div>
+                            <div class="block-info-input">
+                                <textarea name="address" class="form-control" id="" cols="20" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="row-main d-flex">
+                            <div class="block-info-text">
+                                <p class="text">Chọn giờ giao hàng <span> *</span></p>
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="inputState">State</label> -->
+                                <select id="inputState" class="form-control">
+                                    <option selected>12:00 PM</option>
+                                    <option>12:30 PM</option>
+                                    <option>13:00 PM</option>
+                                    <option>13:30 PM</option>
+                                    <option>14:30 PM</option>
+                                    <option>15:50 PM</option>
+                                    <option>16:30 PM</option>
+                                    <option>17:00 PM</option>
+                                    <option>17:30 PM</option>
+                                    <option>18:00 PM</option>
+                                    <option>18:30 PM</option>
+                                    <option>19:00 PM</option>
+                                    <option>19:30 PM</option>
+                                    <option>20:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row-main d-flex">
+                            <div class="block-info-text">
+                                <p class="text">Ghi chú</p>
+                            </div>
+                            <div class="block-info-input">
+                                <textarea name="address" class="form-control" id="" cols="20" rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-submit text-center">
+                    <button type="button" class="btn btn-danger" onclick="confirm()">Hoàn Tất</button>
+                </div>
+            </div>
+            <div class="col-sm-10 col-lg-3">
+                <div class="block-total">
+                    <div class="provisional-money">
+                        <p class="provisional-money-text">Tạm tính:</p>
+                        <p class="provisional-money-amount">700.000đ</p>
+                    </div>
+                    <div class="discount">
+                        <p class="discount-text">Giảm giá:</p>
+                        <p class="discount-amount">50.000đ</p>
+                    </div>
+                    <hr id="line">
+                    <div class="transport-fee">
+                        <p class="transport-fee-text">Phí vận chuyển:</p>
+                        <p class="transport-fee-amount">20.000đ</p>
+                    </div>
+                    <div class="total-money">
+                        <p class="total-money-text">Thành tiền:</p>
+                        <p class="total-money-amount">670.000đ</p>
+                    </div>
+                </div>
+                <div class="block-trust">
+                    <div class="delivery">
+                        <i class="fas fa-truck"></i>
+                        <p class="trust-text">Miễn phí vận chuyển cho đơn hàng 300.000đ trở lên</p>
+                    </div>
+                    <div class="support">
+                        <i class="fas fa-headset"></i>
+                        <p class="trust-text">Hỗ trợ online 24/7</p>
+                    </div>
+                    <div class="security">
+                        <i class="fas fa-shield-alt"></i>
+                        <p class="trust-text">Thanh toán bảo mật</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="row footer">
+            <div class="col-md-12 text-center main-footer">
+                <img src="/assets/imgs/logo.png" alt="">
+                <p id="sologan-footer">All for customer - Customer for all</p>
+                <p id="address">102 Ngõ 4C Đặng Văn Ngữ, Quận Đống Đa, Hà Nội</p>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus"></i>
+            </div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="library/jquery/jquery.js"></script>
+    <script src="payment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.6.0/dist/sweetalert2.all.min.js"></script>
+    <script src="library/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="library/MDB/js/popper.min.js"></script>
+    <script src="library/bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+    <script>
+        function confirm() {
+            Swal.fire(
+                'Đặt Hàng Thành Công',
+                'Order Success',
+                'success'
+            )
+            setTimeout(function(){
+                window.location.href='index.html';
+            },2000)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="library/bootstrap-4.4.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="library/MDB/css/mdb.css">
+  <link rel="stylesheet" href="library/MDB/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.6.0/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <title>Liên hệ</title>
+</head>
+
+<body>
+
+  <!-- header -->
+  <div class="container-fluid header">
+    <div class="row">
+      <nav class="navbar navbar-expand-md navbar-light menu">
+        <a class="navbar-brand" href="#"><img src="/assets/imgs/logo.png" alt=""></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav menu-left">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang Chủ <span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu-page.html">Thực Đơn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="khuyen-mai.html">Khuyến Mãi</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav menu-right">
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html" style="color: #FAC122 !important;">Liên Hệ <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="user.html"><i class="fas fa-user-circle"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="sologan">
+        <h1>All for customer - Customer for all</h1>
+      </div>
+      <div id="book_now">
+        <a href="menu-page.html"><button type="button" class="btn btn-danger">Mua Ngay</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5 py-5 z-depth-1">
+
+
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center dark-grey-text">
+      <!--Google map-->
+      <div id="map-container-google-1" class="z-depth-1 map-container mb-5">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5562777595237!2d105.82903031490292!3d21.010416693780208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8068a8f4f1%3A0xf79eef391d6b6ef2!2sThe%20canteen!5e0!3m2!1svi!2s!4v1579078323240!5m2!1svi!2s"
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+      <!--Google Maps-->
+      <div class="row d-flex justify-content-center mb-5">
+        <div class="col-md-6 text-center">
+
+          <h3 class="font-weight-bold">Liên Hệ</h3>
+          <div class="md-form md-outline mt-3">
+            <input type="text" id="form-name" class="form-control">
+            <label for="form-email">Tên</label>
+          </div>
+          <div class="md-form md-outline mt-3">
+            <input type="email" id="form-email" class="form-control">
+            <label for="form-email">E-mail</label>
+          </div>
+
+          <!-- Material outline input -->
+          <div class="md-form md-outline">
+            <input type="text" id="form-subject" class="form-control">
+            <label for="form-subject">Lý do</label>
+          </div>
+
+          <!--Material textarea-->
+          <div class="md-form md-outline mb-3">
+            <textarea id="form-message" class="md-textarea form-control" rows="5"></textarea>
+            <label for="form-message">Nội dung</label>
+          </div>
+
+          <button type="submit" class="btn btn-info btn-sm ml-0" onclick="send()">Gửi<i class="far fa-paper-plane ml-2"></i></button>
+
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+
+          <i class="fas fa-map-marker-alt fa-2x blue-text"></i>
+
+          <p class="font-weight-bold my-3">Địa chỉ</p>
+
+          <p class="text-muted">102 Ngõ 4C Đặng Văn Ngữ, Quận Đống Đa, Hà Nội</p>
+
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+          <i class="fas fa-phone fa-2x blue-text"></i>
+
+          <p class="font-weight-bold my-3">Số điện thoại</p>
+
+          <p class="text-muted">024 888 8888</p>
+
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+          <i class="fas fa-envelope fa-2x blue-text"></i>
+
+          <p class="font-weight-bold my-3">E-mail</p>
+
+          <p class="text-muted">support.thecanteen@gmail.com</p>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- footer -->
+  <div class="container-fluid">
+    <div class="row footer">
+      <div class="col-md-12 text-center main-footer">
+        <img src="/assets/imgs/logo.png" alt="">
+        <p id="sologan-footer">All for customer - Customer for all</p>
+        <p id="address-footer">102 Ngõ 4C Đặng Văn Ngữ, Quận Đống Đa, Hà Nội</p>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-google-plus"></i>
+      </div>
+    </div>
+  </div>
+  <script src="library/jquery/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.6.0/dist/sweetalert2.all.min.js"></script>
+  <script src="library/bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+  <script src="library/MDB/js/mdb.min.js"></script>
+  <script>
+    function send() {
+        Swal.fire(
+            'Cảm ơn bạn đã liên hệ',
+            'Thanks for contact',
+            'success'
+        )
+        setTimeout(function(){
+            window.location.href='index.html';
+        },2000)
+    }
+</script>
+</body>
+
+</html>

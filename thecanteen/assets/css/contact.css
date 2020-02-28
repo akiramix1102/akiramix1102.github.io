@@ -1,0 +1,404 @@
+.map-container {
+    height: 200px;
+    position: relative;
+  }
+
+  .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  * {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+body {
+font-family: 'Roboto', sans-serif !important;
+}
+
+nav.navbar.navbar-expand-sm {
+padding: 0;
+}
+
+/* header */
+.header {
+background: url(/assets/imgs/bg_header.png);
+background-size: cover;
+height: 566px;
+position: relative;
+font-family: 'Roboto', sans-serif !important;
+}
+
+.container-fluid.intro-thecanteen {
+background: url(assets/imgs/bg_intro_restaurant.png);
+height: 850px;
+}
+
+.menu {
+width: 100%;
+background-color: #343a4078;
+}
+
+ul.navbar-nav .nav-item {
+
+margin: 0 10px;
+position: relative;
+
+}
+
+a.navbar-brand {
+height: 100%;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+margin: 0;
+margin-left: 68px;
+}
+
+ul.navbar-nav.menu-left {
+font-size: 28px;
+font-weight: 400;
+}
+
+ul.navbar-nav.menu-left .nav-item .nav-link,
+ul.navbar-nav.menu-right .nav-item .nav-link {
+color: #fff !important;
+}
+
+ul.navbar-nav.menu-right {
+font-size: 28px;
+font-weight: 400;
+}
+
+.navbar-brand img {
+height: 100% !important;
+width: auto;
+display: block;
+}
+
+.collapse {
+justify-content: space-around;
+}
+
+div#sologan {
+text-align: center;
+position: absolute;
+width: 100%;
+top: 50%;
+transform: translateY(-50%);
+font-size: 72px;
+}
+
+div#book_now {
+position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%, -70%);
+}
+
+#sologan h1 {
+color: white !important;
+font-size: 64px;
+}
+
+button.btn.btn-danger {
+font-size: 24px;
+}
+
+li.nav-item::before {
+content: '';
+position: absolute;
+bottom: -7px;
+right: 0;
+left: auto;
+height: 2px;
+background-color: #ffa400;
+width: 0;
+transition: width 0.25s linear;
+}
+
+li.nav-item:hover::before {
+width: 100%;
+left: 0;
+right: auto;
+}
+/* footer */
+.footer{
+    background: url(/assets/imgs/bg_footer.png);
+    height: 445px;
+}
+p#sologan-footer {
+    font-size: 24px;
+    color: #A99292;
+    padding-top: 21px;
+}
+
+p#address-footer {
+    font-size: 24px;
+    color: #A99292;
+}
+
+i.fab.fa-facebook {
+    font-size: 30px;
+    color: #A99292;
+}
+
+i.fab.fa-twitter-square {
+    font-size: 30px;
+    color: #A99292;
+    /* border-radius: 50%; */
+}
+
+i.fab.fa-google-plus {
+    font-size: 30px;
+    color: #A99292;
+}
+.main-footer{
+    padding-top: 65px;
+}
+/* reponsive */
+@media (min-width: 320px) and (max-width:479px){
+    .container-fluid.header {
+        height: 40vh;
+        background-size: cover;
+    }
+    span.navbar-toggler-icon {
+        background-color: #ffffff;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: 0.5px solid #fff;
+    }
+    div#sologan {
+        position: absolute;
+    }
+
+    #sologan h1 {
+        font-size: 18px;
+    }
+
+
+    button.btn.btn-danger {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    a.navbar-brand{
+        margin:0;
+    }
+    .navbar-brand img {
+        height: 44px !important;
+    }
+    .pos-right,.pos-left {
+        position: relative;
+    }
+    .menu {
+        background: #343a40;
+        z-index: 1;
+    }
+    ul.navbar-nav.menu-left {
+        font-size: 14px;
+    }
+
+    ul.navbar-nav.menu-right {
+        font-size: 14px;
+    }
+    p#sologan-footer {
+        font-size: 18px;
+    }
+    
+    p#address-footer{
+        font-size: 18px;
+    }
+    
+    i.fab.fa-facebook {
+        font-size: 25px;
+    }
+    
+    i.fab.fa-twitter-square {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-google-plus {
+        font-size: 24px;
+    }
+}
+@media (min-width: 480px) and (max-width:575px){
+    .container-fluid.header {
+        height: 40vh;
+        background-size: cover;
+    }
+    span.navbar-toggler-icon {
+        background-color: #ffffff;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: 0.5px solid #fff;
+    }
+    div#sologan {
+        position: absolute;
+    }
+
+    #sologan h1 {
+        font-size: 1.5rem;
+    }
+    button.btn.btn-danger {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    a.navbar-brand{
+        margin:0;
+    }
+    .navbar-brand img {
+        height: 44px !important;
+    }
+    .pos-right,.pos-left {
+        position: relative;
+    }
+    .menu {
+        background: #343a40;
+        z-index: 1;
+    }
+    ul.navbar-nav.menu-left {
+        font-size: 14px;
+    }
+
+    ul.navbar-nav.menu-right {
+        font-size: 14px;
+    }
+    p#sologan-footer {
+        font-size: 18px;
+    }
+    
+    p#address-footer {
+        font-size: 18px;
+    }
+    
+    i.fab.fa-facebook {
+        font-size: 25px;
+    }
+    
+    i.fab.fa-twitter-square {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-google-plus {
+        font-size: 24px;
+    }
+}
+@media (min-width: 576px) and (max-width:767px) {
+    .container-fluid.header {
+        height: 400px;
+        background-size: cover;
+    }
+    span.navbar-toggler-icon {
+        background-color: #ffffff;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: 0.5px solid #fff;
+    }
+    div#sologan {
+        position: absolute;
+    }
+
+    #sologan h1 {
+        font-size: 1.7rem;
+    }
+
+    div#book_now {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    button.btn.btn-danger {
+        font-size: 18px;
+    }
+    a.navbar-brand{
+        margin:0;
+    }
+    .navbar-brand img {
+        height: 44px !important;
+    }
+    .pos-right,.pos-left {
+        position: relative;
+    }
+    .menu {
+        background: #343a40;
+        z-index: 1;
+    }
+    ul.navbar-nav.menu-left {
+        font-size: 1rem;
+    }
+
+    ul.navbar-nav.menu-right {
+        font-size: 1rem;
+    }
+    button.btn.btn-info {
+        font-size: 1rem;
+    }
+    p#sologan-footer {
+        font-size: 18px;
+    }
+    
+    p#address-footer {
+        font-size: 18px;
+    }
+    
+    i.fab.fa-facebook {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-twitter-square {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-google-plus {
+        font-size: 24px;
+    }
+}
+@media (min-width: 768px) and (max-width:991px){
+    .menu-left .nav-item {
+        font-size: 16px;
+    }
+
+    .menu-right .nav-item {
+        font-size: 16px;
+    }
+
+    a.navbar-brand {
+        margin-left: 30px;
+    }
+
+    #sologan h1 {
+        font-size: 2rem;
+    }
+
+    .container-fluid.header {
+        height: 500px;
+        background-size: cover;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    ul.navbar-nav.menu-left {
+        font-size: 20px;
+    }
+
+    ul.navbar-nav.menu-right {
+        font-size: 20px;
+    }
+
+    a.navbar-brand {
+        margin-left: 45px;
+    }
+    #sologan h1 {
+        color: white !important;
+        font-size: 2.5rem;
+    }
+}

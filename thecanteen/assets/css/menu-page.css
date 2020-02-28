@@ -1,0 +1,968 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+nav.navbar.navbar-expand-sm {
+    padding: 0;
+}
+
+.header {
+    background: url(/assets/imgs/bg_header.png);
+    background-size: cover;
+    height: 566px;
+    position: relative;
+    font-family: 'Roboto', sans-serif !important;
+}
+.header .row{
+    padding: 0;
+}
+.container-fluid.intro-thecanteen {
+    background: url(assets/imgs/bg_intro_restaurant.png);
+    height: 850px;
+}
+
+.menu {
+    width: 100%;
+    background-color: #343a4078;
+}
+
+ul.navbar-nav .nav-item {
+
+    margin: 0 10px;
+    position: relative;
+
+}
+
+a.navbar-brand {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+ul.navbar-nav.menu-left {
+    font-size: 28px;
+}
+
+ul.navbar-nav.menu-left .nav-item .nav-link,
+ul.navbar-nav.menu-right .nav-item .nav-link {
+    color: #fff !important;
+}
+
+ul.navbar-nav.menu-right {
+    font-size: 28px;
+}
+
+.navbar-brand img {
+    height: 100% !important;
+    width: auto;
+    display: block;
+}
+
+.collapse {
+    justify-content: space-around;
+}
+
+div#sologan {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 72px;
+}
+
+div#book_now {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+#sologan h1 {
+    color: white !important;
+    font-size: 64px;
+}
+
+button.btn.btn-danger {
+    font-size: 24px;
+}
+
+li.nav-item::before {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    left: auto;
+    height: 2px;
+    background-color: #ffa400;
+    width: 0;
+    transition: width 0.25s linear;
+}
+
+li.nav-item:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+/* End header */
+img {
+    max-width: 100%;
+}
+
+.row {
+    justify-content: center;
+}
+
+.menu-food {
+    background-image: url(/assets/imgs/bg__page-menu.png);
+}
+
+.menu-featured {
+    margin: 0 auto;
+    background: #FFFDFD;
+    border: 1px solid #A79191;
+    box-sizing: border-box;
+    border-radius: 19px;
+    padding: 0 87px 0 87px;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.name-products {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.name-products>a {
+    color: #000;
+}
+.name-products a:hover{
+    text-decoration: none;
+    color: #fd0000;
+}
+.name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.price-products {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fd0000;
+}
+
+.flex-right {
+    width: 100%;
+    padding-left: 15px;
+}
+
+h2.name-menu.text-center {
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.menu-featured-products {
+    margin-bottom: 42px;
+}
+
+hr.line-menu {
+    background: #c4c4c4;
+    border: 0.6px solid #a397a2 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+
+p.summary-product {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Slick */
+button#slick-slide-control00:before,
+button#slick-slide-control10:before,
+button#slick-slide-control20:before,
+button#slick-slide-control30:before,
+button#slick-slide-control40:before,
+button#slick-slide-control50:before,
+button#slick-slide-control60:before {
+    font-family: 'Font Awesome\ 5 Free' !important;
+    font-size: 30px !important;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '\f359' !important;
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button#slick-slide-control01:before,
+button#slick-slide-control11:before,
+button#slick-slide-control21:before,
+button#slick-slide-control31:before,
+button#slick-slide-control41:before,
+button#slick-slide-control51:before,
+button#slick-slide-control61:before {
+    font-family: 'Font Awesome\ 5 Free' !important;
+    font-size: 30px !important;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '\f35a' !important;
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul.slick-dots {
+    bottom: -14px !important;
+}
+
+/* Drink */
+.drink {
+    background: #FFFDFD;
+    border: 1px solid #A79191;
+    box-sizing: border-box;
+    border-radius: 19px;
+    margin-right: 15px;
+    margin-top: 371px;
+}
+
+.products-drink {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.name-price-drink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-right-drink {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.name-drink {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+h2.name-menu-drink.text-center {
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.price-drink {
+    font-size: 24px;
+    color: #fd0000;
+}
+
+p.summary-drink {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Menu breakfast */
+.menu-brf {
+    margin-top: 100px;
+    background: #FFFDFD;
+    border: 1px solid #A79191;
+    box-sizing: border-box;
+    border-radius: 19px;
+    margin-left: 15px;
+}
+
+h2.name-menudrink.text-center {
+    padding: 15px 0px 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.products-brf {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.name-price-brf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-right-brf {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.name-brf {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+.price-brf {
+    font-size: 1.5rem;
+    color: #fd0000;
+}
+
+p.summary-brf {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* lunch */
+.menu-lunch {
+    background: #FFFDFD;
+    border: 1px solid #A79191;
+    box-sizing: border-box;
+    border-radius: 19px;
+    margin-right: 15px;
+    margin-top: 108px;
+}
+
+/* footer */
+.footer {
+    background: url(/assets/imgs/bg_footer.png);
+    height: 445px;
+}
+
+p#sologan-footer {
+    font-size: 24px;
+    color: #A99292;
+    padding-top: 21px;
+}
+
+p#address {
+    font-size: 24px;
+    color: #A99292;
+}
+
+i.fab.fa-facebook {
+    font-size: 30px;
+    color: #A99292;
+}
+
+i.fab.fa-twitter-square {
+    font-size: 30px;
+    color: #A99292;
+    /* border-radius: 50%; */
+}
+
+i.fab.fa-google-plus {
+    font-size: 30px;
+    color: #A99292;
+}
+
+.main-footer {
+    padding-top: 65px;
+}
+
+.row.dinner {
+    padding-bottom: 150px;
+}
+
+.name-brf>a,
+.name-drink>a {
+    color: black;
+}
+.name-brf a:hover,
+.name-drink a:hover{
+    color: #fd0000;
+    text-decoration: none;
+}
+/* btn back to top */
+#btn-backtop {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#btn-backtop::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: '\f077';
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#btn-backtop:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#btn-backtop:active {
+    background-color: #555;
+}
+
+#btn-backtop.show {
+    opacity: 1;
+    visibility: visible;
+}
+/* reponsive */
+@media (min-width:320px) and (max-width:479px){ 
+    .container-fluid.header {
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .menu {
+        background: #343a40;
+        z-index: 1;
+    }
+    .navbar-brand img {
+        height: 44px !important;
+    }
+
+    ul.navbar-nav.menu-left {
+        font-size: 1rem;
+    }
+
+    ul.navbar-nav.menu-right {
+        font-size: 1rem;
+    }
+
+    #sologan h1 {
+        font-size: 18px;
+    }
+
+    button.btn.btn-danger.waves-effect.waves-light {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    div#book_now button {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    .row {
+        padding: 0 15px;
+    }
+    
+    .name-products {
+        font-size: 1.5rem;
+    }
+    
+    .row.bf.drink {
+        display: none;
+    }
+    
+    .bf:nth-child(1) {
+        display: none;
+    }
+    
+    .row.bf .drink {
+        display: none;
+    }
+    
+    .menu-brf {
+        margin: 20px 0 0;
+    }
+    
+    .name-brf {
+        font-size: 1.5rem;
+    }
+    
+    p.summary-brf {
+        font-size: 1rem;
+    }
+    
+    p.summary-product {
+        font-size: 1rem;
+    }
+    
+    .row.lunch .drink {
+        display: none;
+    }
+    
+    .menu-lunch {
+        margin: 20px 0 0;
+    }
+    
+    .drink {
+        order: 1;
+        margin: 20px 0 0;
+    }
+    
+    .name-drink {
+        font-size: 1.5rem;
+    }
+    .products {
+        display: block;
+        /* text-align: center; */
+        border-bottom: 1px dotted #ccc;
+    }
+    
+    .products img {
+        margin: 0 auto;
+    }
+    
+    .flex-right {
+        padding-bottom: 30px;
+        margin-top: 40px;
+        padding-left: 0;
+    }
+    .products-brf {
+        display: block;
+        border-bottom: 1px dotted #ccc;
+    }
+    
+    .products-brf img {
+        margin: 0 auto;
+    }
+    
+    .flex-right-brf {
+        margin-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 0;
+    }
+    .products-drink {
+        display: block;
+        border-bottom: 1px dotted #ccc;
+    }
+    
+    .products-drink img {
+        margin: 0 auto;
+    }
+    
+    .flex-right-drink {
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+    p#sologan-footer {
+        font-size: 18px;
+    }
+    
+    p#address {
+        font-size: 18px;
+    }
+    
+    i.fab.fa-facebook {
+        font-size: 25px;
+    }
+    
+    i.fab.fa-twitter-square {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-google-plus {
+        font-size: 24px;
+    }
+}
+@media (min-width:480px) and (max-width:577px){
+    .container-fluid.header {
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .menu {
+        background: #343a40;
+        z-index: 1;
+    }
+    .navbar-brand img {
+        height: 44px !important;
+    }
+
+    ul.navbar-nav.menu-left {
+        font-size: 1rem;
+    }
+
+    ul.navbar-nav.menu-right {
+        font-size: 1rem;
+    }
+
+    #sologan h1 {
+        font-size: 1.5rem;
+    }
+
+    button.btn.btn-danger.waves-effect.waves-light {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    div#book_now button {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    .row {
+        padding: 0 15px;
+    }
+    
+    .name-products {
+        font-size: 1.5rem;
+    }
+    span.navbar-toggler-icon {
+        background-color: #fff;
+    }
+    
+    .products {
+        display: block;
+        /* text-align: center; */
+        border-bottom: 1px dotted #ccc;
+    }
+    
+    .products img {
+        margin: 0 auto;
+    }
+    
+    .flex-right {
+        padding-bottom: 30px;
+        margin-top: 10px;
+    }
+    .row.bf.drink {
+        display: none;
+    }
+    
+    .bf:nth-child(1) {
+        display: none;
+    }
+    
+    .row.bf .drink {
+        display: none;
+    }
+    
+    .menu-brf {
+        margin: 20px 0 0;
+    }
+    
+    .name-brf {
+        font-size: 1.5rem;
+    }
+    
+    .products-brf {
+        display: block;
+        border-bottom: 1px dotted #ccc;
+    }
+    
+    .products-brf img {
+        margin: 0 auto;
+    }
+    
+    .flex-right-brf {
+        margin-top: 10px;
+        padding-bottom: 30px;
+    }
+    p.summary-brf {
+        font-size: 1rem;
+    }
+    
+    p.summary-product {
+        font-size: 1rem;
+    }
+    
+    .row.lunch .drink {
+        display: none;
+    }
+    
+    .menu-lunch {
+        margin: 20px 0 0;
+    }
+    .drink {
+        order: 1;
+        margin: 20px 0 0;
+    }
+    
+    .name-drink {
+        font-size: 1.5rem;
+    }
+    .products-drink {
+        display: block;
+        border-bottom: 1px dotted #ccc;
+    }
+    
+    .products-drink img {
+        margin: 0 auto;
+    }
+    
+    .flex-right-drink {
+        margin-top: 10px;
+        padding-bottom: 30px;
+    }
+    p#sologan-footer {
+        font-size: 18px;
+    }
+    
+    p#address {
+        font-size: 18px;
+    }
+    
+    i.fab.fa-facebook {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-twitter-square {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-google-plus {
+        font-size: 24px;
+    }
+}
+@media (min-width: 576px) and (max-width:767px) {
+    .container-fluid.header {
+        height: 400px;
+        background-size: cover;
+    }
+
+    div#sologan {
+        position: absolute;
+    }
+
+    #sologan h1 {
+        font-size: 32px;
+    }
+
+    div#book_now {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    button.btn.btn-danger {
+        font-size: 18px;
+    }
+
+    .menu {
+        background: #343a40;
+        z-index: 1;
+    }
+
+    ul.navbar-nav.menu-left {
+        font-size: 14px;
+    }
+    span.navbar-toggler-icon {
+        background-color: #ffffff;
+    }
+
+    ul.navbar-nav.menu-right {
+        font-size: 14px;
+    }
+
+    h2#featured-menu-name {
+        font-size: 36px;
+    }
+
+    img.img-product {
+       max-width: 100%;
+    }
+
+    a.navbar-brand img {
+        height: 44px !important;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    a.nav-link {
+        font-size: 1rem;
+    }
+
+    .navbar-brand img {
+        height: 44px !important;
+    }
+
+    #sologan h1 {
+        font-size: 1.7rem;
+    }
+
+    div#book_now button {
+        font-size: 18px;
+    }
+
+    .name-drink,
+    .name-brf,
+    .name-products,
+    .price-products {
+        font-size: 1.5rem;
+    }
+
+    .menu-brf {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .menu-lunch,
+    .drink {
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+    .bf .drink {
+        display: none;
+    }
+    .lunch .drink{
+        display: none;
+    }
+    .dinner .drink{
+        order: 1;
+    }
+    p#sologan-footer {
+        font-size: 18px;
+    }
+    
+    p#address {
+        font-size: 18px;
+    }
+    
+    i.fab.fa-facebook {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-twitter-square {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-google-plus {
+        font-size: 24px;
+    }
+}
+@media (min-width: 768px) and (max-width:991px){
+    .menu-left .nav-item {
+        font-size: 16px;
+    }
+
+    .menu-right .nav-item {
+        font-size: 16px;
+    }
+
+    a.navbar-brand {
+        margin-left: 30px;
+    }
+
+    #sologan h1 {
+        font-size: 2rem;
+    }
+
+    .container-fluid.header {
+        height: 500px;
+        background-size: cover;
+    }
+    .name-drink,
+    .name-brf,
+    .name-products,
+    .price-products {
+        font-size: 1.5rem;
+    }
+
+    .menu-brf {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .menu-lunch,
+    .drink {
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+    .bf .drink {
+        display: none;
+    }
+    .lunch .drink{
+        display: none;
+    }
+    .dinner .drink{
+        order: 1;
+    }
+    .row.dinner {
+        padding-bottom: 50px;
+    }
+    
+    .container-fluid.menu-food {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+@media (min-width:991px) and (max-width:1199px){
+    ul.navbar-nav.menu-left {
+        font-size: 20px;
+    }
+
+    ul.navbar-nav.menu-right {
+        font-size: 20px;
+    }
+
+    a.navbar-brand {
+        margin-left: 45px;
+    }
+    #sologan h1 {
+        color: white !important;
+        font-size: 2.5rem;
+    }
+    .name-drink {
+        font-size: 20px;
+    }
+    .price-drink {
+        font-size: 20px;
+    }
+    
+    p.summary-drink {
+        font-size: 1rem;
+    }
+    
+.name-brf {
+    font-size: 20px;
+}
+
+.price-brf {
+    font-size: 20px;
+}
+
+p.summary-brf {
+    font-size: 1rem;
+}
+
+    .menu-featured-brf .slick-dots {
+        bottom: -170px !important;
+    }
+}
+@media (min-width:1200px)
+{
+    .menu-featured-brf .slick-dots {
+        bottom: -59px !important;
+    }
+}

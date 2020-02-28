@@ -1,0 +1,5 @@
+[2020-2-19 15:17:05] layer "+44 (0)1384 413341": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2020-2-19 15:17:05] layer "Info.insurlife@gmail.com": Unsupported extension: com
+[2020-2-19 15:17:05] layer "Email: INFO.SINSURLIFE@GMAIL": Expected end of input but "@" found.
+[2020-2-19 15:17:05] layer "2k+": Expected end of input but "+" found.
+[2020-2-19 15:17:05] layer "3k+": Expected end of input but "+" found.

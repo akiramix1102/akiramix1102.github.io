@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon-32x32.png">
+    <!-- Link -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="library/MDB/css/mdb.min.css">
+    <link rel="stylesheet" href="library/bootstrap-4.4.1/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="library/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="library/slick-1.8.1/slick/slick-theme.css">
+    <title>Giỏ Hàng</title>
+
+</head>
+
+<body>
+   <!-- header -->
+   <div class="container-fluid header">
+    <div class="row">
+        <nav class="navbar navbar-expand-md navbar-light menu">
+            <a class="navbar-brand" href="#"><img src="/assets/imgs/logo.png" alt=""></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav menu-left">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" >Trang Chủ <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu-page.html" >Thực Đơn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="khuyen-mai.html">Khuyến Mãi</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav menu-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Liên Hệ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user.html"><i class="fas fa-user-circle"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="sologan">
+            <h1>All for customer - Customer for all</h1>
+        </div>
+        <div id="book_now">
+            <a href="menu-page.html"><button type="button" class="btn btn-danger">Mua Ngay</button></a>
+        </div>
+    </div>
+</div>
+    <!-- Block cart and pay -->
+    <div class="container-fluid cart">
+        <div class="row">
+            <div class="col-md-10 back-menu">
+               <a href="index.html"><button type="button" class="btn btn-primary btn-back" style="background-color: rgba(209, 10, 0, 0.77) !important">Tiếp tục mua hàng</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-lg-8">
+            </div>
+            <div class="col-sm-12 col-md-10 col-lg-3 block-total">
+                <div class="provisional-money">
+                    <p class="provisional-money-text">Tạm tính:</p>
+                    <p class="provisional-money-amount">700.000đ</p>
+                </div>
+                <div class="discount">
+                    <p class="discount-text">Giảm giá:</p>
+                    <p class="discount-amount">0đ</p>
+                </div>
+                <form action="">
+                    <input class="discount-code" type="text" onchange="voucher(this)" placeholder="Nhập mã giảm giá vào đây">
+                    <p id="notice"></p>
+                </form>
+                <p id="notice"></p>
+                <hr id="line">
+                <div class="transport-fee">
+                    <p class="transport-fee-text">Phí vận chuyển:</p>
+                    <p class="transport-fee-amount">20.000đ</p>
+                </div>
+                <div class="total-money">
+                    <p class="total-money-text">Thành tiền:</p>
+                    <p class="total-money-amount">720.000đ</p>
+                </div>
+                <button type="button" class="btn btn-danger pay" onclick="getPrice(this)">THANH TOÁN</button>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="row footer">
+            <div class="col-md-12 text-center main-footer">
+                <img src="/assets/imgs/logo.png" alt="">
+                <p id="sologan-footer">All for customer - Customer for all</p>
+                <p id="address">102 Ngõ 4C Đặng Văn Ngữ, Quận Đống Đa, Hà Nội</p>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus"></i>
+            </div>
+        </div>
+    </div>
+    <script src="library/jquery/jquery.js"></script>
+    <script src="cart.js"></script>
+    <script src="library/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="library/MDB/js/popper.min.js"></script>
+    <script src="library/bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="library/MDB/js/mdb.min.js"></script>
+</body>
+
+</html>

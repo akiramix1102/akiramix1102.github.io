@@ -1,0 +1,551 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.header {
+    /* position: relative; */
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.menu {
+    width: 100%;
+    background-color: #000000d4;
+}
+
+ul.navbar-nav .nav-item {
+
+    margin: 0 10px;
+    position: relative;
+
+}
+
+a.navbar-brand {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+ul.navbar-nav.menu-left,
+ul.navbar-nav.menu-right {
+    font-size: 18px;
+}
+
+ul.navbar-nav.menu-left .nav-item .nav-link,
+ul.navbar-nav.menu-right .nav-item .nav-link {
+    color: #fff !important;
+}
+
+.navbar-brand img {
+    height: 100% !important;
+    width: auto;
+    display: block;
+}
+
+.collapse {
+    justify-content: space-around;
+}
+
+
+li.nav-item::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    left: auto;
+    height: 3px;
+    background-color: #ffa400;
+    width: 0;
+    transition: width 0.25s linear;
+}
+
+li.nav-item:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+
+/* block payment */
+.payment .row{
+    justify-content: center;
+    margin-top: 90px;
+}
+
+h1.payment-text {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.option-payment {
+    display: flex;
+    border: 1px solid #D1CFCF;
+    box-sizing: border-box;
+    height: 100px;
+    align-items: center;
+}
+div#d-block {
+    margin-top: 15px;
+}
+
+.form-check {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.info-user {
+    margin-top: 53px;
+}
+
+.block-info {
+    /* margin-left: 15px; */
+    border: 1px solid #D1CFCF;
+    box-sizing: border-box;
+}
+
+.row-main.d-flex {
+    padding-left: 15px;
+    /* margin-top: 15px; */
+    padding-top: 15px;
+    justify-content: space-between;
+}
+
+.block-info-text {
+    font-size: 18px;
+    font-weight: 500;
+    /* display: flex; */
+    /* align-items: center; */
+    /* background: red; */
+    /* position: relative; */
+}
+
+.block-info-input {
+    width: 60%;
+    padding-right: 15px;
+}
+
+span {
+    color: red;
+}
+
+.select-address {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+select#countySel {
+    width: 60%;
+    height: 43px;
+}
+
+select#stateSel {
+    width: 60%;
+}
+select#districtSel {
+    width: 60%;
+}
+
+select#inputState {
+    width: 60%;
+}
+
+.form-group {
+    width: 60%;
+}
+.row-main.d-flex:last-child{
+    padding-bottom: 25px;
+}
+.btn-submit.text-center {
+    margin-top: 53px;
+    margin-bottom: 50px;
+}
+/* block total */
+.block-total {
+    border: 1px solid #D1CFCF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-top: 58px;
+    font-size: 18px;
+    height: 250px;
+    position: relative;
+    padding: 0 15px;
+}
+
+.provisional-money {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.discount {
+    display: flex;
+    justify-content: space-between;
+}
+
+input.discount-code {
+    margin-top: 30px;
+    width: 100%;
+    border: 1px solid #D1CFCF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 47px;
+}
+
+input.discount-code::placeholder {
+    font-size: 18px;
+    text-align: center;
+}
+
+.transport-fee {
+    display: flex;
+    justify-content: space-between;
+}
+.total-money {
+    display: flex;
+    justify-content: space-between;
+}
+hr#line {
+    border: 0.7px solid #CDC6C6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.68);
+    margin-top: 8px;
+    margin-bottom: 24px
+}
+
+button.pay {
+    margin-top: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* block trust */
+.block-trust {
+    margin-top: 25px;
+}
+
+.delivery {
+    border-bottom: 1px solid #E1DDDD;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+
+i.fas.fa-truck {
+    font-size: 36px;
+}
+
+p.trust-text {
+    padding-left: 23px;
+    font-weight: 600;
+}
+
+.support {
+    display: flex;
+    /* align-items: center; */
+    margin-top: 20px;
+    border-bottom: 1px solid #E1DDDD;
+}
+
+i.fas.fa-headset {
+    font-size: 36px;
+    width: 45px;
+}
+
+.security {
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid #E1DDDD;
+}
+
+i.fas.fa-shield-alt {
+    font-size: 36px;
+    width: 45px;
+}
+/* footer */
+.footer {
+    background: url(/assets/imgs/bg_footer.png);
+    height: 445px;
+    margin-bottom: 0 !important;
+}
+
+p#sologan-footer {
+    font-size: 24px;
+    color: #A99292;
+    padding-top: 21px;
+}
+
+p#address {
+    font-size: 24px;
+    color: #A99292;
+}
+
+i.fab.fa-facebook {
+    font-size: 30px;
+    color: #A99292;
+}
+
+i.fab.fa-twitter-square {
+    font-size: 30px;
+    color: #A99292;
+    /* border-radius: 50%; */
+}
+
+i.fab.fa-google-plus {
+    font-size: 30px;
+    color: #A99292;
+}
+
+.main-footer {
+    padding-top: 65px;
+}
+/* reponsive */
+@media (min-width:320px) and (max-width:575px){
+    span.navbar-toggler-icon {
+        background-color: #ffffff;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: 0.5px solid #fff;
+    }
+
+    .navbar-brand img {
+        height: 44px !important;
+    }
+    .menu {
+        background: #343a40;
+        z-index: 1;
+    }
+
+    ul.navbar-nav.menu-left {
+        font-size: 14px;
+    }
+
+    ul.navbar-nav.menu-right {
+        font-size: 14px;
+    }
+    .payment .row {
+        margin-top: 40px;
+    }
+    
+    h1.payment-text {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    select#countySel {
+        width: 93%;
+    }
+    
+    select#stateSel {
+        width: 93%;
+        height: 43px;
+    }
+    
+    .row-main.d-flex {
+        padding-left: 10px;
+    }
+    
+    select#districtSel {
+        width: 93%;
+        height: 43px;
+    }
+    select#inputState {
+        width: 93%;
+    }
+    
+    textarea.form-control {
+        width: 100%;
+    }
+    
+    .block-info-text {
+        font-size: 1rem;
+    }
+    
+    .option-payment {
+    }
+    
+    label.form-check-label {
+        font-size: 1rem;
+    }
+    
+    .btn-submit.text-center {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    
+    p.trust-text {
+    }
+    
+    .delivery {
+        font-size: 1rem !important;
+    }
+    
+    .row.footer {
+        margin-top: 30px;
+    }
+    p#sologan-footer {
+        font-size: 18px;
+    }
+    
+    p#address{
+        font-size: 18px;
+    }
+    
+    i.fab.fa-facebook {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-twitter-square {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-google-plus {
+        font-size: 24px;
+    }
+    .col-sm-10.col-lg-3 {
+        order: -1;
+        margin-bottom: 50px;
+    }
+}
+@media (min-width:576px) and (max-width:767px) {
+    span.navbar-toggler-icon {
+        background-color: #ffffff;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: 0.5px solid #fff;
+    }
+
+    a.navbar-brand img {
+        height: 44px !important;
+    }
+    .container-fluid.payment {
+    }
+    
+    .payment .row {
+        margin-top: 35px;
+    }
+    
+    .btn-submit.text-center {
+        margin-bottom: 10px;
+    }
+    
+    .delivery {
+        font-size: 1rem;
+    }
+    
+    .support {
+        font-size: 1rem;
+    }
+    
+    .security {
+        font-size: 1rem;
+    }
+    
+    .row.footer {
+        margin-top: 30px;
+    }
+    .col-sm-10.col-lg-3 {
+        order: -1;
+        margin-bottom: 50px;
+    }
+    p#sologan-footer {
+        font-size: 18px;
+    }
+    
+    p#address {
+        font-size: 18px;
+    }
+    
+    i.fab.fa-facebook {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-twitter-square {
+        font-size: 24px;
+    }
+    
+    i.fab.fa-google-plus {
+        font-size: 24px;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .menu-left .nav-item {
+        font-size: 16px;
+    }
+
+    .menu-right .nav-item {
+        font-size: 16px;
+    }
+
+    a.navbar-brand {
+        margin-left: 30px;
+    }
+    .btn-submit.text-center {
+        margin-bottom: 10px;
+    }
+    
+    p.discount-text {
+        font-size: 1.5rem;
+    }
+    
+    .discount {
+        font-size: 1.5rem;
+    }
+    
+    .transport-fee {
+        font-size: 1.5rem;
+    }
+    
+    .total-money {
+        font-size: 1.5rem;
+    }
+    
+    .block-total {
+        height: auto;
+    }
+    
+    .row.footer {
+        margin-top: 50px;
+    }
+    p.provisional-money-text {
+        font-size: 24px;
+    }
+    p.provisional-money-amount {
+        font-size: 1.5rem;
+    }
+    .col-sm-10.col-lg-3 {
+        order: -1;
+        margin-bottom: 50px;
+    }
+    
+}
+@media (min-width:992px) and (max-width:1199px){
+    
+    select#countySel {
+        width: 95%;
+    }
+    
+    select#stateSel {
+        width: 95%;
+    }
+    
+    select#districtSel {
+        width: 95%;
+    }
+    
+    select#inputState {
+        width: 95%;
+    }
+}

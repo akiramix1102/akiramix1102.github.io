@@ -1,0 +1,40 @@
+<div class="product-buy">
+    <i class="fas fa-trash-alt" data-toggle="modal" data-target="#modalConfirmDelete" data-product_key=""></i>
+    <img class="img-product" src="" alt="">
+    <p class="name-product"></p>
+    <div class="count">
+        <i class="fas fa-minus-circle" onclick="minusItem(this)"></i>
+        <p id="count" data-product_key="">1</p>
+        <i class="fas fa-plus-circle" onclick="plusItem(this)"></i>
+    </div>
+    <p class="price-product"></p>
+
+    <!--Modal: modalConfirmDelete-->
+    <div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md modal-notify modal-danger" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Xác nhận xóa?</p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+
+                    <i class="fas fa-times fa-4x animated rotateIn"></i>
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a href="" class="btn  btn-outline-danger delete" onclick="deleteItem(this)">Xác Nhận</a>
+                    <a type="button" class="btn  btn-danger waves-effect" data-dismiss="modal">Hủy</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modalConfirmDelete-->
+</div>

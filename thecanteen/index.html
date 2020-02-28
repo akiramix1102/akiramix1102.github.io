@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="library/bootstrap-4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="library/MDB/css/mdb.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="library/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="library/slick-1.8.1/slick/slick-theme.css">
+    <title>The Canteen | All for customer - Customer for all</title>
+</head>
+
+<body>
+
+    <!-- Code Header -->
+    <div class="container-fluid header">
+        <div class="row">
+            <nav class="navbar navbar-expand-md navbar-light menu">
+                <a class="navbar-brand" href="#"><img src="/assets/imgs/logo.png" alt=""></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav menu-left">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" style="color: #FAC122 !important;">Trang Chủ <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu-page.html">Thực Đơn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="khuyen-mai.html">Khuyến Mãi</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav menu-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Liên Hệ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cart" href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                        <li class="nav-item user">
+                            <a class="nav-link" href="user.html"><i class="fas fa-user-circle"></i></a>
+                        </li>
+                        <li class="nav-item register mr-0">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#register">Tài Khoản</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <div id="sologan">
+                <h1>All for customer - Customer for all</h1>
+            </div>
+            <div id="book_now">
+               <a href="#menu-featured"><button type="button" class="btn btn-danger">Mua Ngay</button></a>
+            </div>
+        </div>
+    </div>
+    <!--Modal: Login / Register Form-->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <div class="modal-c-tabs">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i
+                                    class="fas fa-user mr-1"></i>
+                                Đăng Nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i
+                                    class="fas fa-user-plus mr-1"></i>
+                                Đăng Ký</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                            <!--Body modal-->
+                            <div class="modal-body mb-1">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fas fa-envelope prefix"></i>
+                                    <input name="email" type="email" id="modalLRInput10"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput10">Email</label>
+                                </div>
+
+                                <div class="md-form form-sm mb-4">
+                                    <i class="fas fa-lock prefix"></i>
+                                    <input name="password" type="password" id="modalLRInput11"
+                                        class="form-control form-control-sm validate" required>
+                                    <label data-error="wrong" data-success="right" for="modalLRInput11">Mật khẩu</label>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <button class="btn btn-info" data-dismiss="modal" onclick="login(this)">Đăng Nhập <i
+                                            class="fas fa-sign-in ml-1"></i></button>
+                                </div>
+                            </div>
+                            <!--Footer modal-->
+                            <div class="modal-footer">
+                                <div class="options text-center text-md-right mt-1">
+                                    <p>Chưa có tài khoản? <a href="#" class="blue-text">Đăng ký</a></p>
+                                    <p>Quên mật khẩu <a href="#" class="blue-text">Lấy lại mật khẩu!</a></p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">Đóng</button>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                            <!--Body  modal-->
+                            <div class="modal-body">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fas fa-envelope prefix"></i>
+                                    <input type="text" id="modalLRInput12"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput12">Họ tên</label>
+                                </div>
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fas fa-envelope prefix"></i>
+                                    <input type="email" id="modalLRInput12"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput12">Email</label>
+                                </div>
+
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fas fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput13"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput13">Mật khẩu</label>
+                                </div>
+
+                                <div class="md-form form-sm mb-4">
+                                    <i class="fas fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput14"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput14">Nhập lại mật
+                                        khẩu</label>
+                                </div>
+
+                                <div class="text-center form-sm mt-2">
+                                    <button class="btn btn-info">Đăng Ký<i class="fas fa-sign-in ml-1"></i></button>
+                                </div>
+
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-right">
+                                    <p class="pt-1">Đã có tài khoản? <a href="#" class="blue-text">Đăng nhập</a></p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">Hủy</button>
+                            </div>
+                        </div>
+                        <!--/.Panel 8-->
+                    </div>
+
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <div class="container-fluid featured-menu"  id="menu-featured">
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-lg-10 col-xl-8 mr-featured">
+                <h2 id="featured-menu-name" class="text-center">
+                    Thực Đơn Nổi Bật
+                </h2>
+                <div class="slick-featured-menu">
+                    <div class="menu-1">
+                        <img src="assets/imgs/product1.png" alt="product 1" class="img-product">
+                        <p class="name-product text-center">Mozarella</p>
+                        <p class="ingredients text-center">Phô mai, hải sản, rau xà lách...</p>
+                        <p class="price-product text-center">350,000đ</p>
+                        <button type="button" class="btn btn-danger button-buy" data-product_key="product-0"
+                            onclick="addToCart(this)">Mua</button>
+                    </div>
+                    <div class="menu-1">
+                        <img src="assets/imgs/product2.png" alt="product 1" class="img-product">
+                        <p class="name-product text-center">Grilled fish</p>
+                        <p class="ingredients text-center">Phô mai, hải sản, rau xà lách....</p>
+                        <p class="price-product text-center">200.000đ</p>
+                        <button type="button" class="btn btn-danger button-buy" data-product_key="product-1"
+                            onclick="addToCart(this)">Mua</button>
+                    </div>
+                    <div class="menu-1">
+                        <img src="assets/imgs/product3.png" alt="product 1" class="img-product ">
+                        <p class="name-product text-center">Vegetarial</p>
+                        <p class="ingredients text-center">Phô mai, hải sản, rau xà lách...</p>
+                        <p class="price-product text-center">150.000đ</p>
+                        <button type="button" class="btn btn-danger button-buy" data-product_key="product-2"
+                            onclick="addToCart(this)">Mua</button>
+                    </div>
+                    <div class="menu-1">
+                        <img src="assets/imgs/product5.png" alt="product 1" class="img-product">
+                        <p class="name-product text-center">Lotus salad</p>
+                        <p class="ingredients text-center">Phô mai, hải sản, rau xà lách...</p>
+                        <p class="price-product text-center">350.000đ</p>
+                        <button type="button" class="btn btn-danger button-buy">Mua</button>
+                    </div>
+                    <div class="menu-1">
+                        <img src="assets/imgs/product6.png" alt="product 1" class="img-product">
+                        <p class="name-product text-center">Summer roll</p>
+                        <p class="ingredients text-center">Phô mai, hải sản, rau xà lách...</p>
+                        <p class="price-product text-center">350.000đ</p>
+                        <button type="button" class="btn btn-danger button-buy">Mua</button>
+                    </div>
+                    <div class="menu-1">
+                        <img src="assets/imgs/product7.png" alt="product 1" class="img-product">
+                        <p class="name-product text-center">Mozarella</p>
+                        <p class="ingredients text-center">Phô mai, hải sản, rau xà lách...</p>
+                        <p class="price-product text-center">350.000đ</p>
+                        <button type="button" class="btn btn-danger button-buy">Mua</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Thong báo time sale  -->
+    <div class="container-fluid time-sale">
+        <div class="row">
+            <div class="col-md-2 dp-none"></div>
+            <div class="col-sm-3 col-md-3 col-lg-4 name-sale">
+                <p>Giảm giá 50%</p>
+            </div>
+            <div class="col-sm-9 col-md-9 col-lg-8 time-count">
+                <div class="time-item">
+                    <div class="item-inside">
+                        <div class="time-number" id="days">10</div>
+                        <div class="time-title">Ngày</div>
+                    </div>
+                </div>
+                <div class="time-item">
+                    <div class="item-inside">
+                        <div class="time-number" id="hours">10</div>
+                        <div class="time-title">Giờ</div>
+                    </div>
+                </div>
+                <div class="time-item">
+                    <div class="item-inside">
+                        <div class="time-number" id="minutes">10</div>
+                        <div class="time-title">Phút</div>
+                    </div>
+                </div>
+                <div class="time-item">
+                    <div class="item-inside">
+                        <div class="time-number" id="seconds">10</div>
+                        <div class="time-title">giây</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu today-->
+    <div class="container-fluid menu-today">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 id="menu-today-name">Thực Đơn Hôm Nay</h2>
+                <img src="/assets/imgs/image-menu-today.png" alt="" class="img-bottom">
+            </div>
+            <!-- tabs -->
+            <div class="col-12 tabs-menu">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <!-- <li class="nav-item text-center">
+                        <button class="menu-link active" id="all-tab" data-toggle="tab" href="#all" role="tab"
+                            aria-controls="all" aria-selected="true" onclick="changeBg(this)">Tất cả</button>
+                    </li> -->
+                    <li class="nav-item text-center">
+                        <button class="menu-link " id="bf-tab" data-toggle="tab" href="#bf" role="tab"
+                            aria-controls="bf" aria-selected="false" onclick="changeBg(this)">Bữa Sáng</button>
+                    </li>
+                    <li class="nav-item text-center">
+                        <button class="menu-link " id="lunch-tab" data-toggle="tab" href="#lunch" role="tab"
+                            aria-controls="lunch" aria-selected="false" onclick="changeBg(this)">Bữa Trưa</button>
+                    </li>
+                    <li class="nav-item text-center">
+                        <button class="menu-link " id="dinner-tab" data-toggle="tab" href="#dinner" role="tab"
+                            aria-controls="dinner" aria-selected="false" onclick="changeBg(this)">Bữa Tối</button>
+                    </li>
+                    <li class="nav-item text-center">
+                        <button class="menu-link " id="Coffe-tab" data-toggle="tab" href="#coffe" role="tab"
+                            aria-controls="coffe" aria-selected="false" onclick="changeBg(this)">Cà Phê</button>
+                    </li>
+                    <li class="nav-item text-center">
+                        <button class="menu-link " id="cake-tab" data-toggle="tab" href="#cake" role="tab"
+                            aria-controls="cake" aria-selected="false" onclick="changeBg(this)">Bánh</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- tab panes -->
+            <div class=" col-sm-12 col-md-12 col-lg-11 tab-content">
+                <!-- Bữa sáng -->
+                <div class="tab-pane active" id="bf" role="tabpanel" aria-labelledby="bf-tab">
+                    <div id="flex-all-menu">
+                        <div class="col-6 menu-all-left">
+                            <div class="product">
+                                <a href="detail.html"> <img src="/assets/imgs/cake5.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Vegetarial</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">300.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <a href="detail.html"> <img src="/assets/imgs/cf2.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Mozazella</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">200.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <a href=""><img src="/assets/imgs/menu-product9.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <p class="name">Abalone</p>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">360.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 menu-all-right">
+                            <div class="product">
+                                <a href="detail.html"><img src="/assets/imgs/menu-product4.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Grilled fish</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">90.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <a href="detail.html"> <img src="/assets/imgs/menu-product5.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Sweet gruel</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">130.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- bữa trưa -->
+                <div class="tab-pane" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
+                    <div id="flex-all-menu">
+                        <div class="col-6 menu-all-left">
+                            <div class="product">
+                                <a href="detail.html"><img src="/assets/imgs/menu-product1.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Vegetarial</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">300.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <a href="detail.html"><img src="/assets/imgs/menu-product2.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Mozazella</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">200.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 menu-all-right">
+                            <div class="product">
+                                <a href="detail.html"><img src="/assets/imgs/menu-product4.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Grilled fish</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">90.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <a href="detail.html"> <img src="/assets/imgs/menu-product3.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Abalone</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">360.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bữa tối-->
+                <div class="tab-pane" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
+                    <div id="flex-all-menu">
+                        <div class="col-6 menu-all-left">
+                            <div class="product">
+                                <a href="detail.html"><img src="/assets/imgs/menu-product10.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Vegetarial</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">300.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <a href="detail.html"><img src="/assets/imgs/menu-product11.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Mozazella</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">200.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 menu-all-right">
+                            <div class="product">
+                                <a href="detail.html"><img src="/assets/imgs/menu-product3.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Grilled fish</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">90.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <a href="detail.html"> <img src="/assets/imgs/menu-product7.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Abalone</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">360.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- cafe -->
+                <div class="tab-pane" id="coffe" role="tabpanel" aria-labelledby="coffe-tab">
+                    <div id="flex-all-menu">
+                        <div class="col-6 menu-all-left">
+                            <div class="product">
+                                <a href="detail.html"><img src="/assets/imgs/cf1.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Vegetarial</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">300.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <a href="detail.html"><img src="/assets/imgs/cf2.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Mozazella</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">200.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 menu-all-right">
+                            <div class="product">
+                                <a href="detail.html"><img src="/assets/imgs/cf3.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Grilled fish</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">90.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <a href=""> <img src="/assets/imgs/cf4.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="">
+                                                <p class="name">Abalone</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">360.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bánh -->
+                <div class="tab-pane" id="cake" role="tabpanel" aria-labelledby="cake-tab">
+                    <div id="flex-all-menu">
+                        <div class="col-6 menu-all-left">
+                            <div class="product">
+                                <a href="detail.html"><img src="/assets/imgs/cake1.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Vegetarial</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">300.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <a href="detail.html"><img src="/assets/imgs/cake4.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Mozazella</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">200.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 menu-all-right">
+                            <div class="product">
+                                <a href="detail.html"><img src="/assets/imgs/cake5.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Grilled fish</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">90.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <a href="detail.html"> <img src="/assets/imgs/cake2.png" alt="Vegetarial"></a>
+                                <div class="flex-right">
+                                    <div class="name-price">
+                                        <div class="menu-name-product">
+                                            <a href="detail.html">
+                                                <p class="name">Abalone</p>
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price">360.000đ</p>
+                                        </div>
+                                    </div>
+                                    <hr class="line-menu-today">
+                                    <p class="summary-product">
+                                        Phô mai, hải sản, cà chua, dầu...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal book table -->
+    <div class="container-fluid book-table">
+        <div class="row text-center">
+            <div class="col-12 text-center ">
+                <p id="sologan-book">Đặt bàn luôn nào!</p>
+                <div>
+                    <button type="button" class="btn btn-danger book-now" data-toggle="modal"
+                        data-target="#book-table">Đặt Ngay</button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="book-table" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center" id="exampleModalLabel">ĐẶT BÀN</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group col-md-12">
+                                    <!-- <label for="inputState">State</label> -->
+                                    <select id="inputState" class="form-control">
+                                        <option selected>1 người</option>
+                                        <option>2 người</option>
+                                        <option>3 người</option>
+                                        <option>4 người</option>
+                                        <option>5 người</option>
+                                        <option>6 người</option>
+                                        <option>7 người</option>
+                                        <option>8 người</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input type="date" name="bday" max="3000-12-31" min="1000-01-01"
+                                        class="form-control" placeholder="Chọn ngày">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <!-- <label for="inputState">State</label> -->
+                                    <select id="inputState" class="form-control">
+                                        <option selected>10:00 AM</option>
+                                        <option>10:30 AM</option>
+                                        <option>11:00 AM</option>
+                                        <option>11:30 AM</option>
+                                        <option>12:00 PM</option>
+                                        <option>13:00 PM</option>
+                                        <option>13:30 PM</option>
+                                        <option>14:00 PM</option>
+                                    </select>
+                                </div>
+                                <!-- Material input -->
+                                <div class="md-form col-md-12">
+                                    <input type="text" id="modalLRInput12"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput12">Họ tên</label>
+                                </div>
+                                <div class="md-form col-md-12">
+                                    <input type="email" id="modalLRInput12"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput12">Email</label>
+                                </div>
+                                <div class="md-form col-md-12">
+                                    <input type="text" id="modalLRInput12"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput12">Số điện
+                                        thoại</label>
+                                </div>
+                                <p id="note">Lưu ý: Sau 15 phút nếu quý khách chưa tới, bàn sẽ bị hủy</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Xác Nhận</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- khuyeens mai -->
+    <div class="container-fluid promotions">
+        <div class="row">
+            <div class="col-md-12 text-center  promotion-sales">
+                <p style="font-size: 2.5rem; font-weight: bold;"><a href=""> Khuyến Mãi Hot</a></p>
+            </div>
+            <div class=" col-sm-12 col-md-10 col-xl-8 main-promotion">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="img-promotions">
+                        <img class="card-img-top img-fluid" src="/assets/imgs/mua 3.png" alt="Khuyến mãi 1">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-time">01/02 - 14/02</p>
+                            <h4 class="card-title"><a href="">Mua 3 trả tiền 2</a> </h4>
+                            <p class="card-text"><a href="khuyen-mai-detail.html" class="card-text">Xem chi tiết</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-promotions">
+                        <img class="card-img-top img-fluid" src="/assets/imgs/voucher.jpg" alt="Khuyến mãi 2">
+                    </div>
+                        <div class="card-body">
+                            <p class="card-time">25/01 - 05/02</p>
+                            <h4 class="card-title"><a href="khuyen-mai-detail.html">Lì xì voucher</a></h4>
+                            <p class=" card-text"><a href="khuyen-mai-detail.html" class="card-text">Xem chi tiết</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-promotions">
+                        <img class="card-img-top img-fluid" src="/assets/imgs/urban-station-ưu-đãi-cuối-tuần-large.jpg" alt="Khuyến mãi 3">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-time">01/02 - 08/02</p>
+                            <h4 class="card-title"><a href="khuyen-mai-detail.html">Đại hội đồng giá</a></h4>
+                            <p class=" card-text"><a href="khuyen-mai-detail.html" class="card-text">Xem chi tiết</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- review guest -->
+    <div class="container-fluid review-guest">
+        <div class="row">
+            <div class="col sm-12 col-md-8 text-center slick-review center-div">
+                <div class="block-review">
+                    <div class="img-review"></div>
+                    <div class="comment-reviewer">
+                        "Tôi rất hài lòng với sự phục vụ nhiệt tình của nhân viên nhà hàng này, rất chu đáo, nhiệt tình
+                        cũng như chất lượng thức ăn tốt. Tôi thích món Heo Massage tại đây. Cảm ơn Nhà hàng!"
+                    </div>
+                    <div class="name-reviewer">Lionel Messi <span class="job">--Cầu thủ bóng đá</span></div>
+                </div>
+                <div class="block-review">
+                    <div class="img-review-1"></div>
+                    <div class="comment-reviewer">
+                        "Theo tôi thấy thì Năm Nhỏ có vị trí đẹp, thoáng mát, nhân viên phục vụ nhiệt tình, nhanh nhẹn,
+                        niềm nở, giá cả cũng vừa phải. Nếu bạn thích sự chuyên nghiệp và thoải mái thì tôi thấy nhà hàng
+                        này là Ok!"
+                    </div>
+                    <div class="name-reviewer">Sơn Tùng M-TP<span class="job">--Nhạc sĩ/Ca sĩ</span></div>
+                </div>
+                <div class="block-review">
+                    <div class="img-review-2"></div>
+                    <div class="comment-reviewer">
+                        "Tháng vừa rồi, gia đình mình tổ chức mừng ngày cưới tại Năm Nhỏ. Phải nói từ khâu đặt chỗ cho
+                        đến thưởng thức tại nhà hàng mình cảm thấy hết sức hài lòng. Nhân viên rất nhiệt tình và chu
+                        đáo"
+                    </div>
+                    <div class="name-reviewer">Xuân Bắc<span class="job">--Nghệ sĩ</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog -->
+    <div class="container-fluid blog">
+        <div class="row">
+            <div class="col-md-12 text-center  promotion-sales">
+                <p style="font-size: 2.5rem; font-weight: bold;"><a href="">Blog Hôm Nay</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-xl-8 main-blog">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="/assets/imgs/img-post.jpg" alt="Khuyến mãi 1">
+                        <div class="card-body">
+                            <p class="card-time">01/02</p>
+                            <h4 class="card-title"><a href="blog-detail.html">Cách làm chanh ngâm mật ong</a> </h4>
+                            <p class="card-text"><a href="blog-detail.html" class="card-text">Xem chi tiết</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top  img-fluid" src="/assets/imgs/to-yen.png" alt="Khuyến mãi 2">
+                        <div class="card-body">
+                            <p class="card-time">25/01</p>
+                            <h4 class="card-title"><a href="blog-detail.html">Cách làm tổ yến</a></h4>
+                            <p class=" card-text"><a href="blog-detail.html" class="card-text">Xem chi tiết</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+
+                        <img class="card-img-top  img-fluid" src="/assets/imgs/dot-quy.png" alt="Khuyến mãi 3">
+                        <div class="card-body">
+                            <p class="card-time">24/01</p>
+                            <h4 class="card-title"><a href="blog-detail.html">Xây dựng thực đơn</a></h4>
+                            <p class=" card-text"><a href="blog-detail.html" class="card-text">Xem chi tiết</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-md-12 text-center main-footer">
+                <img src="/assets/imgs/logo.png" alt="">
+                <p id="sologan-footer">All for customer - Customer for all</p>
+                <p id="address">102 Ngõ 4C Đặng Văn Ngữ, Quận Đống Đa, Hà Nội</p>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus"></i>
+            </div>
+        </div>
+    </div>
+    <!-- back to top-->
+    <button type="button" id="btn-backtop"></button>
+    <!-- Javascript link-->
+    <script src="library/jquery/jquery.js"></script>
+    <script src="index.js"></script>
+    <script src="addToCart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="library/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="library/MDB/js/popper.min.js"></script>
+    <script src="library/bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="library/MDB/js/mdb.min.js"></script>
+    <script>
+        function login(event) {
+            var parentDiv = $(event).parent().parent().parent().parent().parent().parent().parent().parent().parent();
+            console.log(parentDiv)
+            parentDiv.find('.user').css('display', 'block');
+            parentDiv.find('.register').css('display', 'none');
+            parentDiv.find('.login').css('display', 'none');
+        }
+    </script>
+</body>
+
+</html>
