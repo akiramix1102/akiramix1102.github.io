@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shopping Cart jQuery</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+
+    .quant {
+      width: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+
+    <tbody></tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="3"></td>
+        <th id="total"></th>
+      </tr>
+    </tfoot>
+  </table>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script>
+    // Data
+    let products = [{
+        name: "product1",
+        price: 1000,
+        quantity: 2
+      },
+      {
+        name: "product2",
+        price: 2000,
+        quantity: 3
+      },
+      {
+        name: "product3",
+        price: 2000,
+        quantity: 4
+      }
+    ]
+
+    // Render
+    products.forEach((product, index) => {
+      $('tbody').append(`
+        <tr data-index="${index}">
+          <td class="name">${product.name}</td>
+          <td class="price">${product.price}</td>
+          <td>
+            <button class="decrease">-</button>
+            <input class="quant" value="${product.quantity}"></input>
+            <button class="increase">+</button>
+          </td>
+          <td class="eachTotal">${product.price * product.quantity}</td>
+        </tr>
+      `)
+    })
+    updateTotal()
+
+    // Handle button decrease/increase
+    $('.decrease').on('click', function () {
+      const index = $(this).parents('tr').data('index')
+      // Update data
+      
+      if (products[index].quantity > 0) {
+        products[index].quantity -= 1;
+      }
+      else
+      {
+        products[index].quantity=0;
+      }
+      // Update view
+      $(`tr[data-index="${index}"]`).find('.quant').attr('value', products[index].quantity)
+
+      updateEachTotal()
+      updateTotal()
+    })
+
+    $('.increase').on('click', function () {
+      const index = $(this).parents('tr').data('index')
+
+      // Update data
+      products[index].quantity += 1;
+
+      // Update view
+      $(`tr[data-index="${index}"]`).find('.quant').attr('value', products[index].quantity)
+
+      updateEachTotal()
+      updateTotal()
+    })
+
+    // Hande input change quant
+    $('.quant').on('input', function () {
+      const index = $(this).parents('tr').data('index')
+      const newQuant = Number($(this).val())
+
+      // Update data
+      products[index].quantity = newQuant;
+
+      // Update view
+      $(`tr[data-index="${index}"]`).find('.quant').attr('value', products[index].quantity)
+
+      updateEachTotal()
+      updateTotal()
+    })
+
+    // Re-calculate eachTotal
+    function updateEachTotal() {
+      products.forEach((product, index) => {
+        $(`tr[data-index="${index}"]`).find('.eachTotal').text(`${product.price * product.quantity}`)
+      })
+    }
+
+    // (Re-)calculate Total
+    function updateTotal() {
+      const total = products.reduce((total, product) => total + product.price * product.quantity, 0)
+
+      $('#total').text(total)
+    }
+  </script>
+</body>
+
+</html>

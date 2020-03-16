@@ -10,10 +10,10 @@ function renderCart() {
   var data = localStorage;
   $.each(data, function (key, value) {
     var key_condition = key.substr(0, 7);
+    console.log(value)
     if (key_condition === 'product') {
-      var per_data = $.parseJSON(value);
+      var per_data = JSON.parse(value);
       console.log(per_data)
-
       $('.col-lg-8').append('<div class="' + key + '"></div>');
       $('.' + key).load('CartComponent.html');
       setTimeout(function () {
@@ -55,6 +55,7 @@ function plusItem(event) {
 function minusItem(event) {
   var getCount = $(event).parent().find('#count').text();
   var count=getCount-1;
+  console.log(count)
   if (count <= 0) {
       $(event).parent().find('#count').html('0');
       $(event).parent().parent().find('.price-product').text('0đ');

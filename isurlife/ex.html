@@ -6,49 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            background: url(/isurlife/assets/imgs/background-products.png);
+        table.table.table-light {
+            width: 30%;
+            text-align: center;
         }
 
-        .test2 {
-            margin: 100px;
-            width: 300px;
-            transition: all ease 1s;
+        tr {
+            height: 50px;
         }
 
-        .test2:hover .content,.test2:hover .img {
-            transform: translateY(-10px);
-        }
-        .test2:hover .read{
-            opacity: 1;
-            overflow: hidden;
-            transform: translateY(2px);
-        }
-        .content,.img {
-            transition: all ease 0.4s;
-        }
-        .read{
-            opacity: 0;
-            transition: all ease 0.5s;
+        input[type="text"] {
+            text-align: center;
+            margin: 0 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="test2">
-        <div class="img">
-            <img src="/isurlife/assets/imgs/img_product__life.png" alt="">
-        </div>
-        <div class="content">
-            <p>Life isurance</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consequuntur perspiciatis. Quidem vitae
-                illum, debitis et possimus iusto earum perspiciatis voluptatibus, sit soluta facilis beatae numquam
-                tenetur. Assumenda, eos quod?</p>
-        </div>
-        <div class="read">
-            <a href="">Read More</a>
-        </div>
-    </div>
+    <table class="table table-light">
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>price</td>
+                <td>Quantity</td>
+                <td>total</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="/library/jquery/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            let products = [{
+                    name: "product1",
+                    price: 1000,
+                    quantity: 2
+                },
+                {
+                    name: "product2",
+                    price: 2000,
+                    quantity: 3
+                },
+                {
+                    name: "product3",
+                    price: 2000,
+                    quantity: 4
+                }
+            ];
+            $.each(products, function (key, value) {
+                var total = value.quantity * value.price;
+                $('tbody').append('<tr><td class="name">' + value.name + '</td>' +
+                    '<td class="price">' + value.price + '</td>' +
+                    '<td class="quantity"><button type="button" onclick=minus(this)>-</button><input type="text" onchange=onChange(this,this.value) value=' +
+                    value.quantity + '><button onclick=plus(this)>+</button></td>' +
+                    '<td class="total">' + total + '</td></tr>')
+            });
+            $('tbody').append('<tr><td colspan=3></td><td class="Sum"></td>')
+                setSum();
+        });
+
+        function minus(e) {
+            var divParent = $(e).parent();
+            var getPrice = divParent.parent().find('.price').text();
+            var getCount = divParent.find('input').val();
+            var count = getCount - 1;
+            var price = getPrice * count;
+            if (count >= 0) {
+                $(e).parent().find('input').val(count);
+                $(e).parent().parent().find('.total').text(price);
+            } else {
+                $(e).parent().parent().find('.total').text('0');
+            }
+            setSum()
+        }
+        // 
+
+        function plus(e) {
+            var divParent = $(e).parent();
+            var getPrice = parseInt(divParent.parent().find('.price').text());
+            var getCount = parseInt(divParent.find('input').val());
+            var count = getCount + 1;
+            var price = getPrice * count;
+            $(e).parent().find('input').val(count);
+            $(e).parent().parent().find('.total').text(price);
+            setSum()
+        }
+        //
+        function onChange(key, val) {
+            var divParent = $(key).parent().parent();
+            var getPrice = divParent.find('.price').text();
+            var setTotal = getPrice * val;
+            divParent.find('.total').text(setTotal);
+            setSum()
+        }
+
+        function setSum()
+        {
+            var sum = 0;
+                $('.total').each(function() {
+                    var num = $(this).text();
+                    if (num != 0) {
+                        sum += parseInt(num);
+                        console.log(sum)
+                    }
+                });
+                $('.Sum').text(sum);
+        }
+    </script>
 </body>
 
 </html>

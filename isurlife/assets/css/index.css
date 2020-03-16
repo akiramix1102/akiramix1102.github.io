@@ -577,6 +577,8 @@ button.btn.btn-link.collapsed {
 section.explore-us{
     background-image: url(/isurlife/assets/imgs/background-explore.png);
     background-size: cover;
+    margin-bottom: 100px;
+
 }
 .row.find-agent {
     padding-top: 100px;
@@ -614,10 +616,279 @@ section.explore-us{
     font-size: 6.25rem;
     color: #005b7f;
     font-family: "Oswald";
+    padding-bottom: 100px;
 }
 .row.couter-up p {
     font-size: 1.25rem;
 }
+
+/*  testimonial and awards  */
+.section-testimonial{
+    margin-bottom: 100px;
+}
+.testimonial {
+    padding: 50px;
+    background-color: #eff5fa;
+}
+
+.testimonial__title h5 {
+    letter-spacing: 4px;
+    font-family: "Oswald";
+    color: #ff866b;
+    font-size: 0.875rem;
+}
+
+.testimonial__title h2 {
+    font-family: "Oswald";
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.comment-text {
+    font-size: 0.875rem;
+    font-family: 'Poppins';
+    margin-bottom: 50px !important;
+}
+
+.commenter {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin-right: 20px;
+}
+
+.awards__title h5 {
+    margin: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 8px;
+}
+
+.awards__title {
+    text-align: center;
+    background-color: #ff866b;
+    padding: 10px;
+}
+
+img.has-mr {
+    margin: 5px 0;
+}
+.name{
+    font-family: "Oswald";
+}
+.name p:first-child{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.name p:last-child {
+    color: #ccc;
+    font-size: 0.875rem;
+}
+
+a.carousel-control-prev {
+    /* opacity: 1; */
+    top: 60%;
+    left: 75%;
+    background-color: #ccc;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+a.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border: 1px solid #000;
+    top: 60%;
+    right: 8%;
+    /* opacity: 1; */
+}
+
+/* the news */
+.thenews__title h5 {
+    color: #ff866b;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-family: "Oswald";
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.thenews__title {
+    text-transform: uppercase;
+    font-family: "Oswald";
+}
+
+.thenews__title h2 {
+    font-size: 2.5rem;
+}
+
+.twitter-post {
+    margin-top: 50px;
+    text-align: center;
+    padding: 50px 44px;
+    background-color: #eff5fa;
+}
+
+.company-press {
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.twitter-post__content h5 {
+    color: #ff866b;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-family: "Oswald";
+    letter-spacing: 2px;
+    margin-bottom: 47px;
+}
+
+i.fab.fa-twitter {
+    color: #1da1f2;
+    font-size: 1.875rem;
+    margin-bottom: 20px;
+}
+
+.twitter-post__content p,.twitter-post__content a {
+    font-family: 'Poppins';
+    font-size: 0.875rem;
+    font-weight: 550;
+}
+.company-press__content {
+    position: absolute;
+    top: 0;
+    padding: 42px 44px;
+    width: 15%;
+}
+.company-press__content--meta {
+    font-size: 0.75rem;
+    color: #ff866b;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.company-press__content--title {
+    font-size: 1.25rem;
+    font-family: "Oswald";
+    color: #fff;
+    margin-bottom: 15px;
+}
+.company-press__content--title a{
+    color: #fff;
+}
+.company-press__content--title a:hover{
+    text-decoration: none;
+    color: #ff866b;
+}
+
+.company-press__content--summary {
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 0.875rem;
+    margin-bottom: 40px;
+}
+
+.company-press__content--date {
+    font-size: 0.75rem;
+    font-family: "Oswald";
+    color: #ccc;
+    text-transform: uppercase;
+}
+.col-md-12.subcribe {
+    margin-top: 100px;
+    padding-left: 0;
+}
+
+.form-wrap {
+    position: relative;
+}
+
+input[type="search"] {
+    border-bottom: 1px solid #ff866b;
+    width: 100%;
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    opacity: 0.5;
+    outline: none;
+}
+.form-btn.btn-quotes {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.form-btn .btn-quotes__link span {
+    position: relative;
+    z-index: 10;
+    text-transform: uppercase;
+    font-family: "Oswald";
+}
+.form-btn .btn-quotes__link {
+    padding: 10px 40px;
+    border: 1px solid #ff866b;
+    text-decoration: none;
+    color: #000;
+    margin-left: 5px;
+    position: relative;
+    background: #ff866b;
+}
+.form-btn .btn-quotes__link:hover {
+    color: #000;
+    text-decoration: none;
+}
+.form-btn .btn-quotes__link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 0.4;
+    transition: all ease 0.4s;
+}
+.form-btn .btn-quotes__link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 1;
+    transition: all ease 0.4s;
+}
+
+.form-btn .btn-quotes__link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 1;
+    transition: all ease 0.4s;
+}
+.form-btn .btn-quotes__link:hover::before {
+    width: 100%;
+    transition: all 0.4s;
+}
+.form-btn .btn-quotes__link:hover::after {
+    width: 100%;
+    transition: all 0.4s;
+    transition-delay: 0.2s;
+}
+
 /* reponsive */
 @media screen and (max-width:767px) {
 
