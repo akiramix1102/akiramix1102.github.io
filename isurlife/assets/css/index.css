@@ -568,18 +568,20 @@ button.btn.btn-link.collapsed {
     transform: translateY(5px);
     opacity: 1;
 }
+
 .product__button {
     margin: 70px 0 100px;
     text-transform: uppercase;
 }
 
 /* explore us */
-section.explore-us{
+section.explore-us {
     background-image: url(/isurlife/assets/imgs/background-explore.png);
     background-size: cover;
     margin-bottom: 100px;
 
 }
+
 .row.find-agent {
     padding-top: 100px;
     font-family: "Oswald";
@@ -604,13 +606,16 @@ section.explore-us{
     font-size: 0.875rem;
     margin-bottom: 40px;
 }
-.find-agent__content .conten__group-btn{
+
+.find-agent__content .conten__group-btn {
     text-transform: uppercase;
     justify-content: left;
 }
-.find-agent__content .conten__group-btn .btn-quotes .btn-quotes__link{
+
+.find-agent__content .conten__group-btn .btn-quotes .btn-quotes__link {
     margin: 0;
 }
+
 .row.couter-up {
     margin-top: 100px;
     font-size: 6.25rem;
@@ -618,14 +623,16 @@ section.explore-us{
     font-family: "Oswald";
     padding-bottom: 100px;
 }
+
 .row.couter-up p {
     font-size: 1.25rem;
 }
 
 /*  testimonial and awards  */
-.section-testimonial{
+.section-testimonial {
     margin-bottom: 100px;
 }
+
 .testimonial {
     padding: 50px;
     background-color: #eff5fa;
@@ -676,14 +683,17 @@ section.explore-us{
 img.has-mr {
     margin: 5px 0;
 }
-.name{
+
+.name {
     font-family: "Oswald";
 }
-.name p:first-child{
+
+.name p:first-child {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .name p:last-child {
     color: #ccc;
     font-size: 0.875rem;
@@ -710,6 +720,10 @@ a.carousel-control-next {
 }
 
 /* the news */
+section.section-thenews {
+    margin-bottom: 100px;
+}
+
 .thenews__title h5 {
     color: #ff866b;
     text-transform: uppercase;
@@ -755,17 +769,20 @@ i.fab.fa-twitter {
     margin-bottom: 20px;
 }
 
-.twitter-post__content p,.twitter-post__content a {
+.twitter-post__content p,
+.twitter-post__content a {
     font-family: 'Poppins';
     font-size: 0.875rem;
     font-weight: 550;
 }
+
 .company-press__content {
     position: absolute;
     top: 0;
     padding: 42px 44px;
     width: 15%;
 }
+
 .company-press__content--meta {
     font-size: 0.75rem;
     color: #ff866b;
@@ -781,10 +798,12 @@ i.fab.fa-twitter {
     color: #fff;
     margin-bottom: 15px;
 }
-.company-press__content--title a{
+
+.company-press__content--title a {
     color: #fff;
 }
-.company-press__content--title a:hover{
+
+.company-press__content--title a:hover {
     text-decoration: none;
     color: #ff866b;
 }
@@ -802,6 +821,7 @@ i.fab.fa-twitter {
     color: #ccc;
     text-transform: uppercase;
 }
+
 .col-md-12.subcribe {
     margin-top: 100px;
     padding-left: 0;
@@ -821,17 +841,20 @@ input[type="search"] {
     opacity: 0.5;
     outline: none;
 }
+
 .form-btn.btn-quotes {
     position: absolute;
     right: 0;
     top: 10px;
 }
+
 .form-btn .btn-quotes__link span {
     position: relative;
     z-index: 10;
     text-transform: uppercase;
     font-family: "Oswald";
 }
+
 .form-btn .btn-quotes__link {
     padding: 10px 40px;
     border: 1px solid #ff866b;
@@ -841,10 +864,12 @@ input[type="search"] {
     position: relative;
     background: #ff866b;
 }
+
 .form-btn .btn-quotes__link:hover {
     color: #000;
     text-decoration: none;
 }
+
 .form-btn .btn-quotes__link::before {
     content: '';
     position: absolute;
@@ -856,6 +881,7 @@ input[type="search"] {
     opacity: 0.4;
     transition: all ease 0.4s;
 }
+
 .form-btn .btn-quotes__link::after {
     content: '';
     position: absolute;
@@ -879,18 +905,140 @@ input[type="search"] {
     opacity: 1;
     transition: all ease 0.4s;
 }
+
 .form-btn .btn-quotes__link:hover::before {
     width: 100%;
     transition: all 0.4s;
 }
+
 .form-btn .btn-quotes__link:hover::after {
     width: 100%;
     transition: all 0.4s;
     transition-delay: 0.2s;
 }
 
+/* footer */
+footer {
+    background: #005b7f;
+}
+
+.partner-wrap {
+    border-bottom: 1px solid #fff;
+    padding: 45px 0 50px;
+}
+
+.our-partner__title {
+    padding-bottom: 35px;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    color: #fff;
+}
+
+h4#our-partner__title {
+    font-size: 1.25rem;
+}
+
+.foot-page-wrap {
+    padding: 50px 0;
+}
+
+.foot-page__contact {
+    font-family: "Oswald";
+}
+
+.foot-page__contact--title h5 {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 26px;
+}
+
+.foot-page__contact--phone {
+    align-items: center;
+    margin: 7px 0;
+}
+
+.foot-page__contact--phone img {
+    margin-right: 10px;
+}
+
+.foot-page__contact--phone span {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.foot-page__contact--phone a {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.foot-page__company img {
+    margin-bottom: 26px;
+}
+
+.foot-page__company p {
+    padding: 0 72px;
+    margin-bottom: 10px !important;
+    font-size: 0.875rem;
+}
+
+.foot-page__company a {
+    color: #ccc;
+}
+
+.foot-page__company {
+    font-family: "Oswald";
+}
+
+.foot-page__company--icon i {
+    color: #ccc !important;
+    font-size: 1.25rem !important;
+    margin: 0 5px;
+}
+
+.foot-page__link {
+    font-family: "Oswald";
+    text-align: right;
+}
+
+.foot-page__link--title {
+    color: #fff;
+    margin-bottom: 26px;
+}
+
+.foot-page__link ul {
+    list-style: none;
+}
+
+.foot-page__link ul li a {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.foot-page__link ul li a:hover {
+    text-decoration: none;
+    color: #ff866b;
+}
+
+.foot-page__contact--phone a:hover {
+    text-decoration: none;
+    color: #ff866b;
+}
+
 /* reponsive */
-@media screen and (max-width:767px) {
+@media screen and (max-width:739px) {
+    .header-top {
+        padding: 0;
+    }
+
+    .header-top__address,
+    .header-top__contact {
+        display: none;
+    }
+
+    .header-top__logo {
+        margin: 0 auto;
+    }
+
 
     .show-menu,
     .hide-menu {
@@ -926,5 +1074,127 @@ input[type="search"] {
 
     #chk:checked~.menu {
         right: 0;
+    }
+
+    .content__intro {
+        font-size: 3rem;
+    }
+
+    .about__group-btn {
+        margin-bottom: 50px;
+    }
+
+    .support__content {
+        margin-top: 30px;
+    }
+
+    .col-md-7.find-agent__image {
+        margin-top: 30px;
+    }
+
+    .col-md-4.awards {
+        padding: 0;
+        text-align: center;
+    }
+
+    .company-press {
+        padding: 0;
+    }
+
+    input[type="search"] {
+        font-size: 1.5rem;
+    }
+
+    .form-btn.btn-quotes {
+        top: 0;
+    }
+
+    .foot-page__company {
+        text-align: left !important;
+        margin: 30px 0;
+    }
+
+    .foot-page__company p {
+        padding: 0;
+    }
+
+    .col-md-3.foot-page__link {
+        text-align: left;
+    }
+
+    .our-partner__company {
+        margin: 10px 0;
+    }
+
+    a.carousel-control-prev,
+    a.carousel-control-next {
+        display: none;
+    }
+}
+
+@media screen and (min-width:740px) and (max-width:1023px) {
+    .header-top__address {
+        display: none;
+    }
+
+    .header-top {
+        padding: 0;
+    }
+
+    .content__intro {
+        font-size: 3.5rem;
+    }
+
+    .about__group-btn {
+        margin: 50px 0;
+    }
+
+    .support__content--title {
+        margin-top: 30px;
+    }
+
+    .col-lg-4.awards {
+        text-align: center;
+    }
+
+    .company-press {
+        padding: 0;
+    }
+
+    a.carousel-control-prev,
+    a.carousel-control-next {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1367px) {
+
+    .header-top__address {
+        display: none;
+    }
+
+    .content__intro {
+        font-size: 4.5rem;
+    }
+
+    .col-lg-8.testimonial {
+        padding-bottom: 0;
+    }
+
+    a.carousel-control-prev,
+    a.carousel-control-next {
+        display: none;
+    }
+
+    img.has-mr {
+        margin: 8px 0;
+    }
+
+    .comment-text {
+        margin-bottom: 30px !important;
+    }
+
+    .company-press__img img {
+        height: 100%;
     }
 }

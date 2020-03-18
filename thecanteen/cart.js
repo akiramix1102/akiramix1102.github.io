@@ -1,6 +1,7 @@
 $(document).ready(function () {
   renderCart();
   getPrice();
+  calSum()
   $('.pay').on('click',function(){
     window.location.href='payment.html';
   })
@@ -10,10 +11,8 @@ function renderCart() {
   var data = localStorage;
   $.each(data, function (key, value) {
     var key_condition = key.substr(0, 7);
-    console.log(value)
     if (key_condition === 'product') {
       var per_data = JSON.parse(value);
-      console.log(per_data)
       $('.col-lg-8').append('<div class="' + key + '"></div>');
       $('.' + key).load('CartComponent.html');
       setTimeout(function () {
@@ -33,12 +32,13 @@ function renderCart() {
 function deleteItem(event) {
   var key = $(event).data('product_key');
   var anchor = $(event).parent().parent().parent().parent();
-  console.log(anchor)
   anchor.remove();
   localStorage.removeItem(key);
 }
 
 function plusItem(event) {
+
+  
   // count
   var getCount = $(event).parent().find('#count').text();
   var count=parseInt(getCount)+1;
@@ -50,12 +50,13 @@ function plusItem(event) {
   var convertTotalMoneyToString=totalMoney.toString();
   var finalMoney =convertTotalMoneyToString.replace(/\B(?=(\d{3})+(?!\d))/g, ".")+'đ';
   $(event).parent().parent().find('.price-product').text(finalMoney);
+
+  calSum()
 }
 
 function minusItem(event) {
   var getCount = $(event).parent().find('#count').text();
   var count=getCount-1;
-  console.log(count)
   if (count <= 0) {
       $(event).parent().find('#count').html('0');
       $(event).parent().parent().find('.price-product').text('0đ');
@@ -112,4 +113,13 @@ function voucher(event){
       totalMoney.text('720.000đ')
     }
   },300)
+}
+function calSum()
+{
+  $('.price-product').each(function(){
+    var total=0;
+      var sum=$(this).text();
+      console.log(sum);
+      total+=sum;
+  })
 }
