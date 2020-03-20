@@ -1,0 +1,107 @@
+
+/* footer */
+footer {
+    background: #005b7f;
+}
+
+.partner-wrap {
+    border-bottom: 1px solid #fff;
+    padding: 45px 0 50px;
+}
+
+.our-partner__title {
+    padding-bottom: 35px;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    color: #fff;
+}
+
+h4#our-partner__title {
+    font-size: 1.25rem;
+}
+
+.foot-page-wrap {
+    padding: 50px 0;
+}
+
+.foot-page__contact {
+    font-family: "Oswald";
+}
+
+.foot-page__contact--title h5 {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 26px;
+}
+
+.foot-page__contact--phone {
+    align-items: center;
+    margin: 7px 0;
+}
+
+.foot-page__contact--phone img {
+    margin-right: 10px;
+}
+
+.foot-page__contact--phone span {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.foot-page__contact--phone a {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.foot-page__company img {
+    margin-bottom: 26px;
+}
+
+.foot-page__company p {
+    padding: 0 72px;
+    margin-bottom: 10px !important;
+    font-size: 0.875rem;
+}
+
+.foot-page__company a {
+    color: #ccc;
+}
+
+.foot-page__company {
+    font-family: "Oswald";
+}
+
+.foot-page__company--icon i {
+    color: #ccc !important;
+    font-size: 1.25rem !important;
+    margin: 0 5px;
+}
+
+.foot-page__link {
+    font-family: "Oswald";
+    text-align: right;
+}
+
+.foot-page__link--title {
+    color: #fff;
+    margin-bottom: 26px;
+}
+
+.foot-page__link ul {
+    list-style: none;
+}
+
+.foot-page__link ul li a {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.foot-page__link ul li a:hover {
+    text-decoration: none;
+    color: #ff866b;
+}
+
+.foot-page__contact--phone a:hover {
+    text-decoration: none;
+    color: #ff866b;
+}

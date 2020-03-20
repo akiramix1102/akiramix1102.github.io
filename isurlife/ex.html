@@ -1,76 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .card{
-            width: 300px;
-            height: 400px;
-            box-sizing: border-box;
-            position: relative;
-            transition: all ease-in 0.3s;
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Validate - ThienAnBlog.com</title>
+    <style type="text/css">
+        label {
+            display: inline-block;
+            width: 150px;
         }
-        .card-img{
-            position: relative;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
+
+        input[type="text"],
+        input[type="password"] {
+            display: inline-block;
+            width: 200px;
         }
-        .card-img img{
-            width: 100%;
-            height: 70%;
-            position:absolute;
-        }
-        .card-content{
-            background-color: pink;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 30%;
-            overflow: hidden;
-            transition: all 0.4s;
-        }
-        .card-content h3{
-            text-align: center;
-            font-size: 2rem;
-        }
-        .card-content p{
-            transform: translateY(20px);
-            transition: all ease-in 0.4s;
-        }
-        .card:hover .card-content{
-            height: 70%;
-            left: 0;
-            bottom: 0;
-        }
-        .card:hover .card-content p{
-            transform: translateY(0);
+
+        label.error {
+            display: inline-block;
+            color: red;
+            width: 200px;
         }
     </style>
+    <!-- Load Thư viện jQuery vào trước khi load jQuery Validate-->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js">
+    </script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="card-img">
-                <img src="https://znews-photo.zadn.vn/w660/Uploaded/jbvunte/2017_09_25/kim_tu_thap.jpg" alt="">
+    <form method="get" accept-charset="utf-8" style="width:600px;margin: 0px auto;" id="formDemo">
+        <fieldset>
+            <legend>Demo jQuery Validate - ThienAnBlog.com</legend>
+            <div>
+                <label>Họ</label>
+                <input name="ho" type="text" placeholder="Vui lòng nhập họ" >
             </div>
-            <div class="card-content">
-                <h3>Kim Tu Thap</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, maiores. Perspiciatis expedita
-                    voluptate itaque? Blanditiis, iste. Ad voluptate qui, animi iste itaque id, laboriosam labore
-                    tempore magnam, assumenda voluptatum earum!
-                </p>
+            <div>
+                <label>Tên</label>
+                <input name="ten" type="text" placeholder="Vui lòng nhập tên" >
             </div>
-        </div>
-    </div>
+            <div>
+                <label>Địa chỉ</label>
+                <input name="diachi" type="text" placeholder="Vui lòng nhập địa chỉ" >
+            </div>
+            <div>
+                <label>Số điện thoại</label>
+                <input name="sodienthoai" type="text" placeholder="Vui lòng nhập số điện thoại" >
+            </div>
+            <div>
+                <label>Email</label>
+                <input name="email" type="text" placeholder="Vui lòng nhập Email" >
+            </div>
+            <div>
+                <label>Mật khẩu</label>
+                <input id="password" name="password" type="password" placeholder="Vui lòng nhập Password" >
+            </div>
+            <div>
+                <label>Nhập lại mật khẩu</label>
+                <input name="confirm_password" type="password" placeholder="Vui lòng nhập lại Password" >
+            </div>
+            <div>
+                <label>Điều khoản</label>
+                <input name="dieukhoan" type="checkbox">
+            </div>
+            <div>
+                <label>Thông tin thêm</label>
+                <input name="thongtinthem" type="text" placeholder="Tùy chọn...">
+            </div>
+            <button type="submit">Gửi</button>
+        </fieldset>
+    </form>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+                    //Khi bàn phím được nhấn và thả ra thì sẽ chạy phương thức này
+                    $("#formDemo").validate({
+                        rules: {
+                            ho: "required",
+                        }
+                    });
+                });
+    </script>
 </body>
 
 </html>

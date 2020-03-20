@@ -1,0 +1,266 @@
+/* header */
+.header-top {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    padding: 0 49px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header-top__address {
+    font-family: 'Oswald', sans-serif;
+}
+
+.header-top__address p {
+    color: #959595;
+}
+
+#content-address {
+    color: #000;
+}
+
+#text-viewmap {
+    color: #ff866b;
+}
+
+.header-top__contact {
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header-top__contact--email {
+    margin-right: 43px;
+}
+
+.header-top__contact--email p {
+    color: #959595;
+}
+
+.header-top__contact--email span {
+    color: #000;
+}
+
+.header-top__contact--phone p {
+    color: #959595;
+}
+
+.header-top__contact--phone span {
+    color: #ff866b;
+}
+
+/* main header */
+.bg-row {
+    background-image: url(../imgs/background__banner.png);
+    height: 800px;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+ul.menu.d-flex {
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+li.menu__menu-item {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    padding: 30px 20px;
+    transition: all 0.4s;
+}
+
+.menu {
+    position: relative;
+    z-index: 20;
+}
+
+.menu__menu-item--menu-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu__menu-item--menu-link:hover {
+    transition: all 0.4s;
+    color: #ff866b;
+    text-decoration: none;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    padding: 10px 20px;
+    list-style: none;
+    margin-left: -20px;
+    background: #fff;
+    display: none;
+    z-index: 9999;
+}
+
+.sub-menu__item {
+    padding: 10px 0;
+}
+
+.menu__menu-item:hover .sub-menu {
+
+    display: block !important;
+}
+
+.sub-menu__item--link {
+    color: #000;
+    text-decoration: none;
+}
+
+.sub-menu__item--link:hover {
+    color: #ff866b;
+    text-decoration: none;
+}
+
+.show-menu {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.show-menu,
+.hide-menu {
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+.content__name-company {
+    font-size: 1.25rem;
+    letter-spacing: 4px;
+}
+
+.content__intro {
+    font-size: 6.25rem;
+    white-space: nowrap;
+    margin: 50px 0;
+}
+
+.conten__group-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-product,
+.btn-quotes {
+    font-size: 0.875rem;
+}
+
+.btn-product__link span,
+.btn-quotes__link span {
+    position: relative;
+    z-index: 10;
+}
+
+.btn-product__link {
+    padding: 10px 40px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 5px;
+    position: relative;
+}
+
+.btn-quotes__link {
+    padding: 10px 40px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #000;
+    margin-left: 5px;
+    position: relative;
+    background: #fff;
+}
+
+.btn-product__link:hover,
+.btn-quotes__link:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn-product__link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    opacity: 0.4;
+    transition: all ease 0.4s;
+}
+
+.btn-quotes__link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ff866b;
+    opacity: 0.4;
+    transition: all ease 0.4s;
+}
+
+.btn-product__link::after,
+.btn-quotes__link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 1;
+    transition: all ease 0.4s;
+}
+
+.btn-quotes__link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ff866b;
+    opacity: 1;
+    transition: all ease 0.4s;
+}
+
+.btn-product__link:hover::before {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.btn-quotes__link:hover::before {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.btn-product__link:hover::after,
+.btn-quotes__link:hover::after {
+    width: 100%;
+    transition: all 0.4s;
+    transition-delay: 0.2s;
+}
