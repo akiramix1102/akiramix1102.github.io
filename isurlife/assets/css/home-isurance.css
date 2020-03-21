@@ -1,17 +1,17 @@
 @import "header.css";
 @import "footer.css";
-
-* {
-    margin: 0;
+*{
     padding: 0;
-    font-size: 100%;
-    box-sizing: border-box;
-}
-
-body {
     margin: 0;
+    box-sizing: border-box;
+    font-size: 100%;
 }
-
+.row.bg-row {
+    background-image: url(/isurlife/assets/imgs/services/home-insurance/banner__home--insurance.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* overview product */
 .row.overview {
     justify-content: center;
@@ -46,72 +46,51 @@ body {
 .overview__contact span:nth-child(2) a {
     color: #000;
 }
-
-/*promo product  */
-section.promo {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.promo .row:nth-child(1) {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 100px;
-}
-
-.col-lg-6.promo__img {
-    padding: 0;
-}
-
-.promo__img--thumb::before {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    border-left: 80px solid transparent;
-    border-right: 0 solid transparent;
-    border-top: 20px solid #ff866b;
-}
-
-.promo__img--thumb {
-    position: relative;
-}
-
-.col-lg-6.promo__content {
-    background: #005b7f;
-    padding: 40px 0 40px 40px;
-    flex-basis: 57%;
-    margin-left: -80px;
-    bottom: 20px;
-    max-width: 57%;
+/* services */
+.service {
+    padding-top: 100px;
     font-family: 'Oswald', sans-serif;
 }
 
-.col-lg-6.promo__content h3 {
-    color: #fff;
+.service__title {
+    margin-bottom: 50px;  
+}
+.service__title h4{
     font-size: 2.5rem;
-    margin-bottom: 40px;
 }
 
-.col-lg-6.promo__content ul {
-    list-style: none;
+.service__content {
+    padding: 50px !important;
+    background-color: #eff5fa ;
 }
 
-.col-lg-6.promo__content ul li {
-    margin-bottom: 8px;
-    color: #dde4e9;
+.service :nth-child(3){
+    flex-direction: row-reverse;
+}
+.service__content h5 {
+    color: #ff866b;
+    padding-bottom: 10px;
+    font-size: 1.25rem;
 }
 
-.col-lg-6.promo__content ul li::before {
-    content: "-";
-    margin-right: 10px;
+.service__content p {
+    font-size: 0.875rem;
+    font-family: 'Poppins';
+}
+
+.service__title h4 {
+    font-size: 2.5rem;
+}
+
+.no-padding {
+    padding: 0;
 }
 
 /* promo product*/
 .promo__product {
     padding-top: 100px;
     font-family: 'Oswald';
+    padding-bottom: 100px;
 }
 
 .promo__product--title {
@@ -119,7 +98,7 @@ section.promo {
 }
 
 .no-padding {
-    padding: 0 !important;
+    padding: 0 ;
 }
 
 .product__title {
@@ -206,7 +185,6 @@ section.promo {
     transform: translateY(5px);
     opacity: 1;
 }
-
 /*get quoutes  */
 section.get-quotes {
     background-image: url(/isurlife/assets/imgs/background__getquote.png);
@@ -343,197 +321,4 @@ form h5 {
     width: 100%;
     transition: all 0.4s;
     transition-delay: 0.2s;
-}
-
-/* reponsive */
-@media screen and (max-width:739px) {
-    .header-top {
-        padding: 0;
-    }
-
-    .header-top__address,
-    .header-top__contact {
-        display: none;
-    }
-
-    .header-top__logo {
-        margin: 0 auto;
-    }
-
-
-    .show-menu,
-    .hide-menu {
-        display: block;
-    }
-
-    .menu {
-        position: fixed;
-        height: 100vh;
-        background: #333;
-        top: 0;
-        right: -100%;
-        display: block !important;
-        text-align: center;
-        padding: 40px 0 !important;
-        transition: all 0.5s;
-
-    }
-
-    .menu__menu-item--menu-link {
-        display: block;
-    }
-
-    .menu__menu-item {
-        padding: 10px 0;
-    }
-
-    .hide-menu {
-        position: absolute;
-        top: 0;
-        right: 30px;
-    }
-
-    #chk:checked~.menu {
-        right: 0;
-    }
-
-    .content__intro {
-        font-size: 3rem;
-    }
-
-    .foot-page__company {
-        text-align: left !important;
-        margin: 30px 0;
-    }
-
-    .foot-page__company p {
-        padding: 0;
-    }
-
-    .col-md-3.foot-page__link {
-        text-align: left;
-    }
-
-    .our-partner__company {
-        margin: 10px 0;
-    }
-
-    .promo__content {
-        margin: 0;
-        max-width: 100%;
-        flex-basis: 100%;
-        margin-top: 10px;
-        bottom: 0;
-    }
-
-    .promo__img--thumb::before {
-        border: none;
-    }
-
-    .has-border {
-        border: none;
-        margin: 20px 0;
-    }
-
-    .get-quotes--form {
-        padding: 20px;
-    }
-
-    .wrap-form {
-        flex-direction: column;
-    }
-
-    .wrap-form .d-flex {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .block-btn__btn-quotes--link {
-        padding: 10px 25px;
-    }
-
-    .block-btn {
-        flex-direction: column;
-    }
-
-    .block-btn span {
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-    .promo__content h3 {
-        font-size: 35px;
-    }
-
-    .promo__product--title h3 {
-        font-size: 35px;
-    }
-}
-
-@media screen and (min-width:740px) and (max-width:1023px) {
-    .header-top__address {
-        display: none;
-    }
-
-    .header-top {
-        padding: 0;
-    }
-
-    .content__intro {
-        font-size: 3.5rem;
-    }
-
-    .promo__img--thumb::before {
-        border: none;
-    }
-
-    .promo__content {
-        margin: 0 !important;
-        max-width: 100% !important;
-        flex-basis: 100% !important;
-        margin-top: 10px !important;
-        bottom: 0 !important;
-    }
-
-    .has-border {
-        border: none;
-        margin: 20px 0;
-    }
-
-    .get-quotes--form {
-        padding: 20px;
-    }
-
-    .wrap-form {
-        flex-direction: column;
-    }
-
-    .wrap-form .d-flex {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .block-btn__btn-quotes--link {
-        padding: 10px 25px;
-    }
-
-    .block-btn {
-        flex-direction: column;
-    }
-
-    .block-btn span {
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-}
-
-@media screen and (min-width:1024px) and (max-width:1367px) {
-    .promo .row:nth-child(1) {
-        align-items: center;
-    }
-
-    .get-quotes--form {
-        padding: 40px;
-    }
 }
