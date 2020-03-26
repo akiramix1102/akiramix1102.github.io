@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./library/animate.css-master/animate.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/home-isurance.css">
-    <title>Document</title>
+    <title>InsurLife - Insurance Company HTML5 Template</title>
 </head>
 
 <body>
@@ -224,7 +224,6 @@
                                         get a quotes
                                     </span>
                                 </button>
-
                             </div>
                         </div>
                     </form>
@@ -234,13 +233,26 @@
     </section>
     <iframe src="footer.html"
         onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-
+    <a id="scroll-top"></a>
     <!-- link js -->
     <script src="/isurlife/library/jquery/jquery.js"></script>
     <script src="/isurlife/library/slick-1.8.1/slick/slick.min.js"></script>
     <script src="./library/Counter-Up-master/jquery.counterup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="./library/bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.counter').counterUp();
+            $('.company-press').slick({
+                autoplay: true,
+                arrows: false
+            });
+            $(window).on('load',function(){
+                $('.content__intro').text('Home isurance');              
+            });
+        })
+    </script>
 </body>
-
+    
 </html>

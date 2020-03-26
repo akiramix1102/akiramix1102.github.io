@@ -346,7 +346,55 @@ form h5 {
     transition: all 0.4s;
     transition-delay: 0.2s;
 }
-
+/* scroll to top */
+#scroll-top{
+    position: fixed !important;
+    right: 30px;
+    bottom: -50px;
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+#scroll-top::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #005b7f;
+    border: 1px solid #4d8da6;
+    z-index: -1;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+#scroll-top::after {
+    content: "\f0d8";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+    line-height: 48px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: all ease 0.3s;
+  }
+#scroll-top.show{
+    bottom: 50px;
+    right: 50px;
+    opacity: 1;
+    visibility: visible;
+    transition: all ease 0.3s;
+}
 /* reponsive */
 @media screen and (min-width:320px) and (max-width:575px){
     .header-top {
@@ -415,7 +463,9 @@ form h5 {
     .about__btn-product--link {
         padding: 10px 20px;
     }
-    
+    .content__intro {
+        font-size: 2.5rem;
+    }
     a.btn-product__link {
         padding: 10px 20px;
     }

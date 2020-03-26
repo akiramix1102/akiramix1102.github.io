@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./library/bootstrap-4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./library/animate.css-master/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/pages-contact.css">
+    <title>InsurLife - Insurance Company HTML5 Template</title>
+</head>
+
+<body>
+    <iframe src="header.html"
+        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    <section class="wrap-contact">
+        <div class="container">
+            <div class="row contact">
+                <div class="col-lg-12 contact-title text-center">CONTACT INFORMATION</div>
+                <div class="col-lg-4 contact-email">
+                    <div class="heading">
+                        <img src="./assets/imgs/icon-email.png" alt="email icon" class="img-fluid">
+                        <span>Email us</span>
+                    </div>
+                    <div class="contact__content">
+                        <span>Company:</span>
+                        <p>info.insurlife@gmail.com</p>
+                    </div>
+                    <div class="contact__content  has-mr">
+                        <span>Cailm center:</span>
+                        <p>guest.insurlife@gmail.com</p>
+                    </div>
+                    <div class="contact__content">
+                        <span>Customer care:</span>
+                        <p>support.insurlife@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 contact-phone">
+                    <div class="heading">
+                        <img src="./assets/imgs/icon-phone.png" alt="phone icon" class="img-fluid">
+                        <span>Phone number</span>
+                    </div>
+                    <div class="contact__content">
+                        <span>Company:</span>
+                        <p>(+123) 7410 8520</p>
+                    </div>
+                    <div class="contact__content  has-mr">
+                        <span>Cailm center:</span>
+                        <p>(+123) 7410 8521</p>
+                    </div>
+                    <div class="contact__content">
+                        <span>Customer care:</span>
+                        <p>(+123) 7410 8522</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 contact-chat">
+                    <div class="heading">
+                        <img src="./assets/imgs/icon-chat.png" alt="chat icon" class="img-fluid">
+                        <span>Chat with us</span>
+                    </div>
+                    <div class="contact__content">
+                        <span>Skype 1:</span>
+                        <p>live.InsurlifeCompany1</p>
+                    </div>
+                    <div class="contact__content  has-mr">
+                        <span>Skype 2:</span>
+                        <p>live.InsurlifeCompany2</p>
+                    </div>
+                    <div class="contact__content">
+                        <button type="submit" class="btn-live-chat">
+                            <span>
+                                live chat
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrap-get-touch">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 no-padding-right">
+                    <div class="inner">
+                        <h4>GET IN TOUCH</h4>
+                        <form action="" id="myForm">
+                            <div class="form-controls">
+                                <input type="text" name="name" class="your-name" placeholder="Your name" required>
+                                <input type="email" name="email" class="your-mail" placeholder="Your mail" required>
+                            </div>
+                            <div class="form-controls">
+                                <input type="text" name="phone" class="your-phone" placeholder="Phone number" required>
+                                <input type="text" name="subject" class="your-subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-controls">
+                                <textarea name="message" id="message" cols="30" rows="10"
+                                    placeholder="Your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-form-submit">
+                                <span>
+                                    Submit
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 no-padding-left">
+                    <div class="thumb-img">
+                        <img src="/isurlife/assets/imgs/get-in-touch.png" alt="get in touch" class="img-fluid">
+                    </div>
+                    <div class="wrap-address">
+                        <div class="address">
+                            <span>Address:</span>
+                            <p>123 - Piccadilly, London, ENGLAND <a href="">(VIEW MAP)</a></p>
+                        </div>
+                        <div class="find-agent">
+                            <a href="">FIND AGENTS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <iframe src="footer.html"
+        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    <a id="scroll-top"></a>
+    <!-- link js -->
+    <script src="/isurlife/library/jquery/jquery.js"></script>
+    <script src="/isurlife/library/jquery-validation-1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="./library/bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="./library/WOW-master/dist/wow.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#myForm').validate({
+                rules: {
+				name: "required",
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				},
+				message: "required"
+			},
+			messages: {
+				name: "Please enter your name",
+				phone: "Please enter your phone number",
+				email: "Please enter a valid email address",
+				message: "Please enter message"
+			}
+            });
+
+
+            $(window).on('load', function () {
+                $('.content__intro').text('Contact Us');
+            });
+        })
+    </script>
+</body>
+
+</html>
