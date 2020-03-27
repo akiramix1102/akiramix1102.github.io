@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+// scroll to top
     var btn = $('#scroll-top');
     $(window).scroll(function () {
         if ($(window).scrollTop() > 500) {
@@ -15,5 +15,8 @@ $(document).ready(function () {
             scrollTop: 0
         }, '300');
     });
+
+    // slide blog detail
+    
 });
 new WOW().init();
