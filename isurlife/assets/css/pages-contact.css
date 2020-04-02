@@ -15,7 +15,9 @@ body {
 .bg-row {
     background-image: url(/isurlife/assets/imgs/background__banner-contact.png);
 }
-
+.menu li:nth-child(3) .menu__menu-item--menu-link{
+    color: #ff866b;
+}
 /* wrap contact */
 section.wrap-contact {
     padding: 100px 0;

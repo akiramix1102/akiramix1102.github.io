@@ -12,6 +12,9 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+.menu li:nth-child(2) .menu__menu-item--menu-link{
+    color: #ff866b;
+}
 /* overview product */
 .row.overview {
     justify-content: center;

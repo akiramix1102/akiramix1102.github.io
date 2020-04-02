@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-    background: url(/assets/imgs/bg_header.png);
+    background: url(../imgs/bg_header.png);
     height: 100vh;
     background-size: cover;
     position: relative;
@@ -17,7 +17,7 @@ body {
 }
 
 .container-fluid.intro-thecanteen {
-    background: url(assets/imgs/bg_intro_restaurant.png);
+    background: url(../imgs/bg_intro_restaurant.png);
     height: 850px;
 }
 
@@ -248,7 +248,7 @@ img.img-product {
 
 .featured-menu {
     height: 762px;
-    background: url(/assets/imgs/bg_menu_hightlight_1.png);
+    background: url(../imgs/bg_menu_hightlight_1.png);
     background-size: cover;
 }
 
@@ -283,7 +283,7 @@ img.img-product {
 
 .container-fluid.time-sale {
     /* background: #1D1B1B; */
-    background-image: url(/assets/imgs/bg_timesale.jpg);
+    background-image: url(../imgs/bg_timesale.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -339,7 +339,7 @@ img.img-product {
 /* End time-countdown */
 
 .menu-today {
-    background: url(/assets/imgs/bg-menu-today.png);
+    background: url(../imgs/bg-menu-today.png);
 }
 
 .col-12.text-center {
@@ -455,7 +455,7 @@ p.summary-product {
 /* End menu today */
 
 .book-table {
-    background: url(/assets/imgs/bg_booktable.png);
+    background: url(../imgs/bg_booktable.png);
     height: 315px;
     margin-top: 77px !important;
 }
@@ -502,7 +502,7 @@ button.btn.btn-secondary.waves-effect.waves-light {
 /* end book table */
 
 .promotions {
-    background: url(/assets/imgs/bg-menu-today.png);
+    background: url(../imgs/bg-menu-today.png);
 }
 
 .promotion-sales {
@@ -550,7 +550,7 @@ p.card-time {
 /* review guest  */
 .review-guest {
     background-color: #eeeeee;
-    background-image: url(/assets/imgs/bg__review.png);
+    background-image: url(../imgs/bg__review.png);
     background-size: cover;
     color: #fafafa;
 }
@@ -560,7 +560,7 @@ p.card-time {
 }
 
 .img-review {
-    background-image: url(/assets/imgs/messi-review.webp);
+    background-image: url(../imgs/messi-review.webp);
     width: 100px;
     height: 100px;
     background-size: cover;
@@ -569,7 +569,7 @@ p.card-time {
 }
 
 .img-review-1 {
-    background-image: url(/assets/imgs/mtp-review.jpg);
+    background-image: url(../imgs/mtp-review.jpg);
     width: 100px;
     height: 100px;
     background-size: cover;
@@ -578,7 +578,7 @@ p.card-time {
 }
 
 .img-review-2 {
-    background-image: url(/assets/imgs/xuanbac-review.jpg);
+    background-image: url(../imgs/xuanbac-review.jpg);
     width: 100px;
     height: 100px;
     background-size: cover;
@@ -630,7 +630,7 @@ span.job {
 
 /* footer */
 .footer {
-    background: url(/assets/imgs/bg_footer.png);
+    background: url(../imgs/bg_footer.png);
     height: 445px;
 }
 

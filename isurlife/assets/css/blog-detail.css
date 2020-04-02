@@ -16,7 +16,9 @@ body {
 .bg-row {
     background-image: url(/isurlife/assets/imgs/blog/background__blog-detail.png);
 }
-
+.menu li:nth-child(4) .menu__menu-item--menu-link{
+    color: #ff866b;
+}
 /* sidebar */
 section.wrap-blog {
     padding: 100px 0;

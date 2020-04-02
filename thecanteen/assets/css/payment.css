@@ -274,7 +274,7 @@ i.fas.fa-shield-alt {
 }
 /* footer */
 .footer {
-    background: url(/assets/imgs/bg_footer.png);
+    background: url(../imgs/bg_footer.png);
     height: 445px;
     margin-bottom: 0 !important;
 }

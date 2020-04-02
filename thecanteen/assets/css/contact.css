@@ -26,7 +26,7 @@ padding: 0;
 
 /* header */
 .header {
-background: url(/assets/imgs/bg_header.png);
+background: url(../imgs/bg_header.png);
 background-size: cover;
 height: 566px;
 position: relative;
@@ -128,7 +128,7 @@ right: auto;
 }
 /* footer */
 .footer{
-    background: url(/assets/imgs/bg_footer.png);
+    background: url(../imgs/bg_footer.png);
     height: 445px;
 }
 p#sologan-footer {

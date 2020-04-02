@@ -13,7 +13,7 @@ nav.navbar.navbar-expand-sm {
 }
 
 .header {
-    background: url(/assets/imgs/bg_header.png);
+    background: url(../imgs/bg_header.png);
     background-size: cover;
     height: 566px;
     position: relative;
@@ -23,7 +23,7 @@ nav.navbar.navbar-expand-sm {
     padding: 0;
 }
 .container-fluid.intro-thecanteen {
-    background: url(assets/imgs/bg_intro_restaurant.png);
+    background: url(../imgs/bg_intro_restaurant.png);
     height: 850px;
 }
 
@@ -123,7 +123,7 @@ img {
 }
 
 .menu-food {
-    background-image: url(/assets/imgs/bg__page-menu.png);
+    background-image: url(../imgs/bg__page-menu.png);
 }
 
 .menu-featured {
@@ -353,7 +353,7 @@ p.summary-brf {
 
 /* footer */
 .footer {
-    background: url(/assets/imgs/bg_footer.png);
+    background: url(../imgs/bg_footer.png);
     height: 445px;
 }
 

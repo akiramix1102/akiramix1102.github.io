@@ -15,7 +15,9 @@ body {
 .bg-row {
     background-image: url(/isurlife/assets/imgs/backgroung__banner--career.png);
 }
-
+.menu li:nth-child(3) .menu__menu-item--menu-link{
+    color: #ff866b;
+}
 /* wrap-intro */
 section.wrap-intro {
     padding: 100px 0;

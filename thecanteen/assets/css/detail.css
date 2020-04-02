@@ -10,7 +10,7 @@ body {
 
 /* header */
 .header {
-    background: url(/assets/imgs/bg_header.png);
+    background: url(../imgs/bg_header.png);
     background-size: cover;
     height: 566px;
     position: relative;
@@ -18,7 +18,7 @@ body {
 }
 
 .container-fluid.intro-thecanteen {
-    background: url(assets/imgs/bg_intro_restaurant.png);
+    background: url(../imgs/bg_intro_restaurant.png);
     height: 850px;
 }
 
@@ -349,7 +349,7 @@ img.img-product {
 }
 .featured-menu {
     height: 762px;
-    background: url(/assets/imgs/bg_menu_hightlight_1.png);
+    background: url(../imgs/bg_menu_hightlight_1.png);
     background-size: cover;
 }
 
@@ -382,7 +382,7 @@ img.img-product {
 /* End menu noi bật */
 /* footer */
 .footer {
-    background: url(/assets/imgs/bg_footer.png);
+    background: url(../imgs/bg_footer.png);
     height: 445px;
     margin-top: 100px;
 }
