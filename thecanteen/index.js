@@ -94,7 +94,7 @@ $(document).ready(function () {
 });
 
 // count down
-var countDownDate = new Date("Feb 14, 2020 0:0:0").getTime();
+var countDownDate = new Date("May 01, 2020 0:0:0").getTime();
 var countdownfunction = setInterval(function () {
 
     var now = new Date().getTime();
