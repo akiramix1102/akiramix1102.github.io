@@ -1,88 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>jQuery Validate - ThienAnBlog.com</title>
-    <style type="text/css">
-        label {
-            display: inline-block;
-            width: 150px;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-            display: inline-block;
-            width: 200px;
-        }
-
-        label.error {
-            display: inline-block;
-            color: red;
-            width: 200px;
-        }
-    </style>
-    <!-- Load Thư viện jQuery vào trước khi load jQuery Validate-->
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js">
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-    <form method="get" accept-charset="utf-8" style="width:600px;margin: 0px auto;" id="formDemo">
-        <fieldset>
-            <legend>Demo jQuery Validate - ThienAnBlog.com</legend>
-            <div>
-                <label>Họ</label>
-                <input name="ho" type="text" placeholder="Vui lòng nhập họ" >
-            </div>
-            <div>
-                <label>Tên</label>
-                <input name="ten" type="text" placeholder="Vui lòng nhập tên" >
-            </div>
-            <div>
-                <label>Địa chỉ</label>
-                <input name="diachi" type="text" placeholder="Vui lòng nhập địa chỉ" >
-            </div>
-            <div>
-                <label>Số điện thoại</label>
-                <input name="sodienthoai" type="text" placeholder="Vui lòng nhập số điện thoại" >
-            </div>
-            <div>
-                <label>Email</label>
-                <input name="email" type="text" placeholder="Vui lòng nhập Email" >
-            </div>
-            <div>
-                <label>Mật khẩu</label>
-                <input id="password" name="password" type="password" placeholder="Vui lòng nhập Password" >
-            </div>
-            <div>
-                <label>Nhập lại mật khẩu</label>
-                <input name="confirm_password" type="password" placeholder="Vui lòng nhập lại Password" >
-            </div>
-            <div>
-                <label>Điều khoản</label>
-                <input name="dieukhoan" type="checkbox">
-            </div>
-            <div>
-                <label>Thông tin thêm</label>
-                <input name="thongtinthem" type="text" placeholder="Tùy chọn...">
-            </div>
-            <button type="submit">Gửi</button>
-        </fieldset>
-    </form>
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-                    //Khi bàn phím được nhấn và thả ra thì sẽ chạy phương thức này
-                    $("#formDemo").validate({
-                        rules: {
-                            ho: "required",
-                        }
-                    });
-                });
+  
+        <input type="text" name="" id="">
+        <span></span>
+        <button >Sub</button>
+  
+    <script src="./library/jquery/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('button').on('click',()=>{
+              $('span').text($('input').val())
+            $('input').val('')
+          })
+        
+        });
     </script>
 </body>
-
 </html>
